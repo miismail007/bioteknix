@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="apple-touch-icon" type="image/png" href="https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
+<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+<title>CodePen - Slideshow, CSS only</title>
+<style>
+
+
+#slideclickshow {
+  overflow: hidden;
+  height: 510px;
+  width: 728px;
+  margin: 0 auto;
+}
+
+.slideclick-wrapper {
+  width: 2912px;
+  -webkit-animation: slideclick 18s ease infinite;
+}
+
+.slideclick {
+  float: left;
+  height: 510px;
+  width: 728px;
+}
+
+.slideclick:nth-child(1) {
+  background: #D93B65;
+}
+
+.slideclick:nth-child(2) {
+  background: #037E8C;
+}
+
+.slideclick:nth-child(3) {
+  background: #36BF66;
+}
+
+.slideclick:nth-child(4) {
+  background: #D9D055;
+}
+
+.slideclick-number {
+  color: #000;
+  text-align: center;
+  font-size: 10em;
+}
+
+@-webkit-keyframes slideclick {
+  20% {margin-left: 0px;}
+  30% {margin-left: -728px;}
+  50% {margin-left: -728px;}
+  60% {margin-left: -1456px;}
+  70% {margin-left: -1456px;}
+  80% {margin-left: -2184px;}
+  90% {margin-left: -2184px;}
+}
+</style>
+<script>
+  window.console = window.console || function(t) {};
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+</head>
+<body translate="no">
+<div id="slideclickshow">
+<div class="slideclick-wrapper">
+<div class="slideclick"><h1 class="slideclick-number">1</h1></div>
+<div class="slideclick"><h1 class="slideclick-number">2</h1></div>
+<div class="slideclick"><h1 class="slideclick-number">3</h1></div>
+<div class="slideclick"><h1 class="slideclick-number">4</h1></div>
+<div class="slideclick"><h1 class="slideclick-number">5</h1></div>
+</div>
+</div>
+
+</body>
+</html>

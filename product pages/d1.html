@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<head>
+   <title>
+Bioteknix Private Limited|Biometric Time & Attendance System|Touchless Attendance System|Face Recognition System|Palm Recognition|Boom Barrier|Flap Barrier|Turnstile|Bollard|Parking Barrier|Smart Lock|Hotel Lock|Metal Detector|CCTV</title>
+   <script></script>
+   <link rel="shortcut icon" type="image/png" href="../images/bioteknix.png"/>
+   <style></style>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href="../css/style.css" type="text/css" rel="stylesheet">
+   <link href="../css/1-horizontal.css" type="text/css" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Oswald:200,300,400,500,600,700|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+   <meta name="apple-mobile-web-app-title" content="CodePen">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+   <link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <!-- menu starts-->
+   <style>
+      .topnavsite {
+      overflow: hidden;
+      background-color: #ffffff;
+      }
+      .topnavsite a {
+      float: left;
+      display: block;
+      font-weight: 500;
+      font-size: 16px;
+      color: #182345;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-family: "Montserrat", sans-serif;
+      }
+      .topnavsite .icon {
+      display: none;
+      }
+      .dropdownsite {
+      float: left;
+      overflow: hidden;
+      }
+      .dropdownsite .dropbtnsite {
+      border: none;
+      outline: none;
+      padding: 14px 16px;
+      background-color: inherit;
+      margin: 0;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      color: #182345;
+      }
+      .dropdownsite-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      }
+      .dropdownsite-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+      }
+      .topnavsite a:hover, .dropdownsite:hover .dropbtnsite {
+      background-color: #ddd;
+      color: black;
+      }
+      .dropdownsite-content a:hover {
+      background-color: #ddd;
+      color: black;
+      }
+      .dropdownsite:hover .dropdownsite-content {
+      display: block;
+      }
+      @media screen and (max-width: 600px) {
+      .topnavsite a:not(:first-child), .dropdownsite .dropbtnsite {
+      display: none;
+      }
+      .topnavsite a.icon {
+      float: right;
+      display: block;
+      }
+      }
+      @media screen and (max-width: 600px) {
+      .topnavsite.responsive {position: relative;}
+      .topnavsite.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+      }
+      .topnavsite.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+      }
+      .topnavsite.responsive .dropdownsite {float: none;}
+      .topnavsite.responsive .dropdownsite-content {position: relative;}
+      .topnavsite.responsive .dropdownsite .dropbtnsite {
+      display: block;
+      width: 100%;
+      text-align: left;
+      }
+      }
+   </style>
+   <style>
+      * {box-sizing: border-box;}
+      body {font-family: Verdana, sans-serif;}
+      .mySlides {display: none;}
+      .herobackimg {vertical-align: middle;height: 500px;width:100%;}
+      /* Slideshow container */
+      .slideshow-container {
+      max-width: 100%;
+      position: relative;
+      margin: auto;
+      }
+      /* The dots/bullets/indicators */
+      .dot {
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+      }
+      /* Fading animation */
+      .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+      }
+      @-webkit-keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+      }
+      @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+      }
+   </style>
+   </style>
+   <style>
+      button.slick-next:focus {
+      border: none;
+      outline: none;
+      }
+      button.slick-prev:focus {
+      border: none;
+      outline: none;
+      }
+      .topnav {
+      overflow: hidden;
+      }
+      .topnav a {
+      float: left;
+      display: block;font-weight: 500;
+      font-size: 17px;
+      color: #182345;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none; font-family: "Montserrat", sans-serif;
+      }
+      .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+      }
+      .topnav .icon {
+      display: none;
+      }
+      @media screen and (max-width: 600px) {
+      .topnav a:not(:first-child) {display: none;}
+      .topnav a.icon {
+      float: right;
+      display: block;
+      }
+      }
+      @media screen and (max-width: 600px) {
+      .topnav.responsive {position: relative;}
+      .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+      }
+      .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+      }
+      }
+   </style>
+   <style>
+      /* Fixed sidenavnet, full height */
+      .sidenavnet {
+      height: 100%;
+      width: 100%;
+      position: relative;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: transparent;
+      overflow-x: hidden;
+      padding-top: 20px;
+      }
+      .sidenavnet a, .dropdown-btnnet {
+      padding: 1em 2em;
+      text-decoration: none;
+      font-size: 16px !important;
+      color: #818181;
+      display: block;
+      border: none;
+      border-right-color: currentcolor;
+      border-right-style: none;
+      border-right-width: medium;
+      background: none;
+      width: 100%;
+      text-align: left;
+      cursor: pointer;
+      outline: none;
+      outline-width: medium;
+      background: #f5f5f5;
+      border-right: 2px solid #e3e3e3;
+      margin-bottom: 1em;
+      }
+      .sidenavnet a:hover, .dropdown-btnnet:hover {
+      color: #57b957;
+      background: white;
+      border: 1px solid #57b957;
+      border-top-width: 1px;
+      border-right-width: 1px;
+      border-bottom-width: 1px;
+      border-left-width: 1px;
+      border-width: 0px 2px 0px 0px;
+      }
+      /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+      .dropdown-containernet {
+      display: none;
+      background-color: transparent;
+      padding-left: 8px;
+      }
+      /* Optional: Style the caret down icon */
+      .dropdown-btnnet .fa-caret-down {
+      float: right;
+      padding-right: 8px;
+      }
+      /* Some media queries for responsiveness */
+      @media screen and (max-height: 450px) {
+      .sidenavnet {padding-top: 15px;}
+      .sidenavnet a {font-size: 18px;}
+      }
+   </style>
+   <script>
+      window.console = window.console || function(t) {};
+   </script>
+   <script>
+      if (document.location.search.match(/type=embed/gi)) {
+        window.parent.postMessage("resize", "*");
+      }
+   </script>
+   <style>
+   </style>
+   <style>
+      .mySlidesmrt {display: none}
+      .mrtimg {vertical-align: middle;}
+      /* Slideshow container */
+      .slideshow-containermrt {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+      }
+      /* Next & prevmrtious buttons */
+      .prevmrt {
+      cursor: pointer;
+      position: absolute;
+      top: -50%;
+      background: #57b957;
+      width: auto;
+      padding: 16px;
+      margin-top: 10em;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 3px 0px 0px 3px;
+      user-select: none;
+      left: -8%;
+      }
+      .nextmrt {
+      cursor: pointer;
+      position: absolute;
+      top: -50%;background:#57b957;
+      width: auto;
+      padding: 16px;right: -3% !important;
+      margin-top: 10em;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius:  0px 3px 3px 0px !important;
+      user-select: none;
+      }
+      /* Position the "nextmrt button" to the right */
+      .nextmrt {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+      }
+      /* On hover, add a black background color with a little bit see-through */
+      .prevmrt:hover, .nextmrt:hover {
+      background-color: rgba(0,0,0,0.8);
+      }
+      /* The dotmrts/bullets/indicators */
+      .dotmrt {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+      }
+      .dotmrt:hover {
+      background-color: #717171;
+      }
+      /* Fading animation */
+      .fademrt {
+      -webkit-animation-name: fademrt;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fademrt;
+      animation-duration: 1.5s;
+      }
+      @-webkit-keyframes fademrt {
+      from {opacity: .4} 
+      to {opacity: 1}
+      }
+      @keyframes fademrt {
+      from {opacity: .4} 
+      to {opacity: 1}
+      }
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 300px) {
+      .prevmrt, .nextmrt,.text {font-size: 11px}
+      }
+   </style>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+   <style>
+      .bx-wrapper {
+      width: 100%;max-width: 100% !important;
+      }
+      .bx-wrapper li {
+      margin-top: -16px !important;
+      }
+   </style>
+   <script>
+      window.console = window.console || function(t) {};
+   </script>
+   <script>
+      if (document.location.search.match(/type=embed/gi)) {
+        window.parent.postMessage("resize", "*");
+      }
+   </script>
+   <link rel='stylesheet' href='https://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.css'>
+   <style>
+      .slick-carousel.slick-initialized.slick-slider {
+      width: 100%;
+      float: left;
+      }
+      .slick-list.draggable {
+      float: left;
+      width: 100%;
+      }
+      .slick-track {
+      float: left;
+      width: 100%;
+      }
+      .slick-slide.slick-active {
+      float: left;
+      width: 24%;margin:0em 0.5em;
+      }
+      body .slick-slide .slide-content {
+      margin: 0 !important;
+      padding: 50px 30px !important;
+      background: #fff !important;
+      }
+      .slide-content {
+      float: left;
+      width: 100%;
+      }
+      .slick-list.draggable {
+      float: left;
+      width: 100%;
+      height: 345px;
+      overflow: hidden;
+      }
+      body .slick-prev {
+      top: 10em;
+      left: -3em !important;
+      }
+      .slick-next {
+      top: 10em !important;
+      right: -4em !important;
+      }
+      body .slick-slide .slide-content {
+      margin: 0 10%;
+      padding: 50px 100px;
+      background: #ebf0eb;
+      }
+      body .slick-list {
+      margin: 20px 0px;
+      }
+      body .slick-prev,
+      body .slick-next {
+      position: absolute;
+      right: 10%;
+      background: #57b957;
+      border: none;
+      color: transparent;
+      width: 32px;
+      height: 37px;
+      }
+      body .slick-prev:before,
+      body .slick-next:before {
+      content: ">";
+      color: #fff;
+      font-size: 25px;
+      }
+      body .slick-prev {
+      left: 10%;
+      }
+      body .slick-prev:before {
+      content: "<";
+      }
+      body .slick-dots {
+      list-style: none;
+      margin: 0 auto;
+      text-align: center;
+      }
+      body .slick-dots li {
+      display: inline-block;
+      }
+      body .slick-dots li button {
+      transition: 0.2s background-color ease-in-out 0s;
+      border: none;
+      padding: 0;
+      color: transparent;
+      width: 10px;
+      height: 10px;
+      background-color: #777;
+      margin-right: 10px;
+      border-radius: 50%;
+      }
+      body .slick-dots li.slick-active button {
+      background-color: #fff;
+      }
+   </style>
+   <script>
+      window.console = window.console || function(t) {};
+   </script>
+   <script>
+      if (document.location.search.match(/type=embed/gi)) {
+        window.parent.postMessage("resize", "*");
+      }
+   </script>
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>  
+   <script src="../js/book.js" type="text/javascript"></script>
+   <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+</head>
+<body translate="no">
+
+
+
+
+<!-- <style>
+
+.icon-bar {
+  position: fixed;z-index:999;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.content {
+  margin-left: 75px;
+  font-size: 30px;
+}
+</style>
+<style>
+#mySidenavshr a {
+    position: absolute;
+    left: -120px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 170px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+
+#mySidenavshr a:hover {
+  left: 0;
+}
+
+#aboutshr {
+  top: 20px;
+  background-color:  #00acee;
+}
+
+#blogshr {
+  top: 80px;
+  background-color: #0e76a8;
+}
+
+#projectsshr {
+  top: 140px;
+  background-color: #f44336;
+}
+
+#contactshr{
+  top: 200px;
+  background-color: #4aca59;
+}
+
+#contact1shr{
+  top: -40px;
+  background-color: #3b5998;
+}
+
+.newfb {
+    float: right;
+}
+</style> -->
+   
+<div class="icon-bar">
+
+  
+  <div id="mySidenavshr" class="sidenavshr">
+   <a href="https://www.facebook.com/bioteknix" id="contact1shr"> <span class="newfb"><i class="fa fa-facebook"></i></span> </a>
+  <a href="https://twitter.com/BioteknixPvt" id="aboutshr">   <span class="newfb"><i class="fa fa-twitter"></i></span>  </a>
+  <a href="https://www.linkedin.com/company/bioteknix" id="blogshr"><span class="newfb"><i class="fa fa-linkedin"></i></span> </a>
+  <a href="https://www.instagram.com/bioteknix/" id="projectsshr"> <span class="newfb"><i class="fa fa-instagram"></i></span> </a>
+  <a href="https://api.whatsapp.com/send?phone=+91 89398 56560" id="contactshr"><span class="newfb"><i class="fa fa-whatsapp"></i></span> </a>
+
+</div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- Paste this code after body tag -->
+   <div class="se-pre-con"></div>
+   <div class="wrapper">
+      <div class="header_top">
+         <div class="header_top_left">
+            <p><i class="fa fa-envelope-o"></i><a href="mailto:info@bioteknix.com">info@bioteknix.com</a></p>
+         </div>
+         <div class="header_top_right">
+            <ul class="header_top_menu">
+               <li><i class="fa fa-map-marker"></i><a href="#">Iyyapanthangal , Chennai</a></li>
+               <li><i class="fa fa-phone"></i><a href="tel:+44 2679 1587"> +44 2679 1587</a> <!--<a href="tel:+44 3511 0019">+44 3511 0019</a>--> / <a href="tel:+91 89398 56560">+91 89398 56560</a></li>
+            </ul>
+         </div>
+      </div>
+      <div class="header_bottom_combined">
+         <div class="header_bottom">
+            <!--<div class="topnav" id="myTopnav">
+               <a href="index.html" class="active"><img class="logo1" src="images/newedited.png"></img></a>
+               <a href="index.html" id="newchg">Home</a>
+               <a href="aboutus.html" target="_blank" id="newchg">About</a>
+               <a href="productpage2.html" target="_blank" id="newchg">Product</a>
+               <a href="solutions.html" id="newchg">Solutions</a>
+               <a href="clients.html" id="newchg">Our Clients</a>
+               <a href="#about" id="newchg">Resources</a>
+               <a href="contactus.html" id="newchg">Contact</a>
+               <a href="#about" id="newchg">Support</a>
+               <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+               <i class="fa fa-bars"></i>
+               </a>
+            </div>-->
+         
+            
+         <div class="topnavsite" id="myTopnavsite">
+           <a href="../index.html" class="active"><img class="logo1" src="../images/newedited.png"></img></a>
+  <a href="../index.html" id="newchg">Home</a>
+   <div class="dropdownsite" id="newchg">
+    <button class="dropbtnsite" onclick="location.href='../aboutus.html'">About 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdownsite-content">
+        <a href="../aboutus.html">About us </a>
+                   <!--  <a href="profile.html">Our Profile</a>-->
+                     <a href="../partners.html">Our Partners</a>
+    </div>
+  </div> 
+       <a href="../productpage2.html" target="_blank" id="newchg">Product</a>
+               <a href="../solutions.html" id="newchg">Solutions</a>
+               <a href="../clients.html" id="newchg">Our Clients</a>
+            
+            
+              <div class="dropdownsite" id="newchg">
+    <button class="dropbtnsite">Support
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdownsite-content">
+       <a href="../raise_ticket.html">Raise Ticket</a>
+                     <a href="../feedback.html">Feedback Form</a>
+    </div>
+  </div> 
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="dropdownsite" id="newchg">
+    <button class="dropbtnsite">Resources
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdownsite-content">
+                     <a href="../usermanual.html">User Manual</a>
+                     <a href="../download.html">Download</a>
+    </div>
+  </div> 
+              
+             
+           
+            
+    <a href="../contactus.html" id="newchg">Contact</a>        
+            
+            
+            
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         </div>
+         <div class="header_social_icon">
+            <ul class="social_media">
+               <li><a href=" https://www.facebook.com/bioteknix" target="_blank"><i class="fa fa-facebook-f"></i></a></li>
+               <li><a href=" https://twitter.com/BioteknixPvt" target="_blank"><i class="fa fa-twitter"></i></a></li>
+               <li><a href="https://www.linkedin.com/company/bioteknix/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://www.instagram.com/bioteknix/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+               <li><a href="https://api.whatsapp.com/send?phone=+91 89398 56560" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
+            
+         </ul>
+         </div>
+      </div>
+      <!-- backup header code-->
+	  
+	  <div class="product_single_group">
+         <div class="pagecenter">
+            <div class="product_single_left">
+               <div class="pic_change_large">	  
+                  <img id="myImage" src="d1/single1.png">
+               </div>
+               <div class="pic_change_cta">
+                  <button class="cta_pic" onclick="document.getElementById('myImage').src='d1/single1.png'"><img src="d1/single1.png"></button>
+				   <button class="cta_pic" onclick="document.getElementById('myImage').src='d1/single2.png'"><img src="d1/single2.png"></button>
+				    <button class="cta_pic" onclick="document.getElementById('myImage').src='d1/single3.png'"><img src="d1/single3.png"></button>
+					
+                  
+               </div>
+            </div>
+            <div class="product_single_right">
+               <h3>D1</h3>
+               <div class="product_singlepara">
+                  <p>D1 Tabletop Terminal is specially designed for table or counter use (80-140cm). With fingerprint sensor placed on top of terminal, it enables all-directional fingerprint reading for the convenience of attendance. BioID high sensitivity fingerprint sensor provides faster and more accurate fingerprint verification. With built-in detachable battery lasting for up to 8 hours, and micro-USB power supply for power bank (minimum 2A) connection, there are no more worries for lacking power sockets supply.</p>
+               </div>
+              <div class="product_single_cta">
+                  <button class="productadd_cta" onclick="location.href='../contactus.html'">enquire now</button>
+                  <button style="display:none;" class="productadd_cta">add to product enquiry list</button>
+               </div>
+               <div class="product_single_mediadiv">
+                  <h4 class="sharewebsite">share the website to</h4>
+                  <ul class="social_mediasing">
+                     <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.bioteknix.in" target="_blank"><i class="fa fa-facebook-f"></i></a></li>
+                     <li><a href="https://twitter.com/intent/tweet?text=Check+out+url=http://www.bioteknix.in" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                     <li><a href="https://www.linkedin.com/cws/share?url=http-www-bioteknix-in" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                     <li><a href="https://api.whatsapp.com/send?text=http://www.bioteknix.in" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+	  
+	  <div class="parameter_group">
+         <div class="pagecenter">
+            <h4>parameters</h4>
+            <div class="parameter_table">
+               <table>
+                  <tbody><tr>
+					 <td class="para_hglt">	Capacity</td>
+					 </tr>
+					 <tr>
+					 <td>Max User(1:N)</td>
+					 <td>1,000</td>
+					 </tr>
+					  <tr>
+					 <td>Max Fingerprint (1:N)
+
+</td>
+					 <td>1,000</td>
+					 </tr>
+					  <tr>
+					 <td>Max Record
+
+</td>
+					 <td>5,000</td>
+					 </tr>
+					  <tr>
+					 <td class="para_hglt">Interface
+
+</td>
+					 
+					 </tr>
+					  <tr>
+					 <td>Wi-Fi
+
+</td>
+					 <td>WLAN / Hot Spot</td>
+					 </tr>
+					  <tr>
+					 <td>USB</td>
+					 <td>USB 2.0 (Host)
+
+</td>
+					 </tr>
+					 <tr>
+					 <td class="para_hglt">Hardware
+
+</td>
+					 
+					 </tr>
+					  <tr>
+					 <td>LCD
+
+</td>
+					 <td>2.8” Color LCD</td>
+					 </tr>
+					  <tr>
+					 <td>Sound
+
+</td>
+					 <td>24-bit</td>
+					 </tr>
+					  <tr>
+					 <td>Operating Temp.
+
+</td>
+					 <td>0 °C- 45 °C</td>
+					 </tr>
+					  <tr>
+					 <td>Operating Humidity
+
+</td>
+					 <td>20% ~ 80%</td>
+					 </tr>
+					  <tr>
+					 <td>Power
+
+</td>
+					 <td>DC 5V 2A</td>
+					 </tr>
+					  <tr>
+					 <td>Battery
+
+</td>
+					 <td>4,000 mAh</td>
+					 </tr>
+					  <tr>
+					 <td>Dimensions
+
+</td>
+					 <td>180.0 x 84.5 x 81(W x H x D mm)</td>
+					 </tr>
+					  <tr>
+					 <td>Standard Function
+
+</td>
+					 <td>Automatic Status Switch, Self-Service Query, SSR DST, T9 Input, 9 Digit User ID, Scheduled Bell</td>
+					 </tr>
+					  <tr>
+					 <td>Compatibility
+
+</td>
+					 <td>ZKTime.net 3.0, TA Assistant(Optional)</td>
+					 </tr>
+					
+				   
+				 
+               </tbody></table>
+            </div>
+         </div>
+      </div>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  <!-- header code starts --->
+	  
+      
+      <style type="text/css">
+        .scroll-to-top{
+          width: 45px;
+    height: 45px;
+    background: #57b957;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    text-align: center;
+    transition: all .4s ease;
+        }
+        .scroll-to-top i {
+    font-size: 18px;
+    line-height: 45px;
+    color: #fff;
+}
+      </style>
+      <script type="text/javascript">
+        $(document).ready(function() {
+
+    $('#scroll-top').click(function(){
+        $('html, body').animate({scrollTop:0}, 'slow');
+        return false;
+    });
+
+});
+      </script>
+      <a href="#" id="scroll-top" data-target="html" class="scroll-to-target scroll-to-top" style="display: block;"><i class="fa fa-angle-up"></i></a>
+      <!--- backup footer code-->
+      <div class="section_nine">
+         <div class="pagecenter">
+            <ul class="bxslider">
+               <li><img style="width: 160px;height:160px; object-fit: contain;" src="../images/mainclients/1.India Meteorological Department.png" /></li>
+               <li><img style="width: 160px;height:160px; object-fit: contain;" src="../images/mainclients/2.Directorate General of Quality Assurance.png" /></li>
+               <li><img style="width: 160px;height:160px; object-fit: contain;" src="../images/mainclients/3.logo_larsen_toubro.jpg" /></li>
+               <li><img style="width: 160px;height:160px; object-fit: contain;" src="../images/mainclients/4.Radisson Blu.png" /></li>
+               <li><img style="width: 160px;height:160px; object-fit: contain;" src="../images/mainclients/5.Federal Bank.png" /></li>
+               <li><img style="width: 160px;height:160px; object-fit: contain;" src="../images/mainclients/6.CSB_Bank_Logo.png" /></li>
+               <li><img style="width: 160px;height:160px; object-fit: contain;" src="../images/mainclients/7.GRT Hotels & Resorts.png" /></li>
+               <li><img style="width: 160px;height:160px; object-fit: contain;" src="../images/mainclients/8.THAMIZHAGA CABLE TV COMMUNICATION PVT LTD.png" /></li>
+               <li><img style="width: 160px;height:160px; object-fit: contain;" src="../images/mainclients/9.IIT MADRAS.png" /></li>
+               <li><img style="width: 160px;height:160px; object-fit: contain;" src="../images/mainclients/10.Icat.png" /></li>
+               <li><img style="width: 160px;height:160px; object-fit: contain;" src="../images/mainclients/11.FE FUNDINFO (INDIA) PRIVATE LIMITED.png" /></li>
+               <li><img style="width: 160px;height:160px; object-fit: contain;" src="../images/mainclients/12.Angel TV.png" /></li>
+               <li><img style="width: 160px;height:160px; object-fit: contain;" src="../images/mainclients/13.STANADYNE INDIA PRIVATE LIMITED.png" /></li>
+               <li><img style="width: 160px;height:160px; object-fit: contain;" src="../images/mainclients/14.WITZENMANN INDIA PRIVATE LIMITED.svg" /></li>
+               <li><img style="width: 160px;height:160px; object-fit: contain;" src="../images/mainclients/15.SICAME India.png" /></li>
+               <li><img style="width: 160px;height:160px; object-fit: contain;" src="../images/mainclients/16.GEAKMINDS TECHNOLOGIES PVT LTD.png" /></li>
+               <li><img style="width: 160px;height:160px; object-fit: contain;" src="../images/mainclients/17.HENSEL ELECTRIC INDIA PVT LTD.png" /></li>
+            </ul>
+         </div>
+      </div>
+      
+
+
+      <div class="footer_top">
+         <div class="pagecenterfooter">
+            <div class="footer_part1">
+               <h4 class="footer_logo"><img onclick="location.href='../index.html'" src="../images/transparent_favicon.png"></img></h4>
+               <p>No.14/118, Gangai Amman Koil Street, Periyakoluthuvancherri, Iyyapanthangal, Chennai, Tamilnadu, India. Pincode -600122., </p>
+              
+           
+           
+
+
+<a href="tel:+44 2679 1587 ">
+                  <p> <i class="fa fa-phone"></i> +44 2679 1587 </p>
+               </a>
+           <a href="tel:+44 3511 0019">
+                  <p> <i class="fa fa-phone"></i> +44 3511 0019</p>
+               </a>
+               <a href="tel:+918939856560">
+                  <p><i class="fa fa-phone"></i>+91-8939856560</p>
+               </a>
+               
+               <a href="http://www.bioteknix.com" target="_blank">
+                  <p> <i class="fa fa-globe"></i>http://www.bioteknix.com</p>
+               </a>
+            
+            <a href="http://www.bioteknix.in" target="_blank">
+                  <p><i class="fa fa-globe"></i> http://www.bioteknix.in</p>
+               </a>
+               <a href="mailto:info@bioteknix.com">
+                  <p> <i class="fa fa-envelope"></i> info@bioteknix.com </p>
+               </a>
+            <a href="mailto:bioteknixprivatelimited@gmail.com">
+                     <p> <i class="fa fa-envelope"></i> bioteknixprivatelimited@gmail.com</p>
+                  </a>
+               <ul class="social_media1">
+                    <li><a href=" https://www.facebook.com/bioteknix" target="_blank"><i class="fa fa-facebook-f"></i></a></li>
+               <li><a href=" https://twitter.com/BioteknixPvt" target="_blank"><i class="fa fa-twitter"></i></a></li>
+               <li><a href="https://www.linkedin.com/company/bioteknix/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://www.instagram.com/bioteknix/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+               <li><a href="https://api.whatsapp.com/send?phone=+91 89398 56560" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
+            
+               </ul>
+            </div>
+            <div class="footer_part2">
+               <h4>Links</h4>
+               <ul class="service_list">
+                  <li><a href="../index.html"><i class="fa fa-angle-right"></i> Home</a></li>
+                  <li><a href="../aboutus.html"> <i class="fa fa-angle-right"></i>About us</a></li>
+                  <li><a href="../productpage2.html"><i class="fa fa-angle-right"></i>Product</a></li>
+                  <li><a href="../solutions.html"><i class="fa fa-angle-right"></i>Solutions</a></li>
+                  <li><a href="../clients.html"><i class="fa fa-angle-right"></i>Our Clients</a></li>
+                                <li><a href="../raise_ticket.html"><i class="fa fa-angle-right"></i>Support</a></li>
+                           
+                           <li><a href="../catalog.html"><i class="fa fa-angle-right"></i>Resources</a></li>
+                                             <li><a href="../contactus.html"><i class="fa fa-angle-right"></i>Contact us</a></li>           
+                                         
+               </ul>
+            </div>
+            <div class="footer_part3">
+              <!-- <h4>Latest Work</h4>
+               <ul class="work_photos">
+                  <li><img src="images/footer-work-1-1.png"></img></li>
+                  <li><img src="images/footer-work-1-2.png"></img></li>
+                  <li><img src="images/footer-work-1-3.png"></img></li>
+                  <li><img src="images/footer-work-1-4.png"></img></li>
+                  <li><img src="images/footer-work-1-5.png"></img></li>
+                  <li><img src="images/footer-work-1-6.png"></img></li>
+               </ul>-->
+            
+            <h4>Quick Links</h4>
+            <div class="useful_link_div">
+               <ul class="service_list">
+                  <li><a href="../productpage2.html"><i class="fa fa-angle-right"></i> Cctv</a></li>
+                  <li><a href="../productpage2.html"> <i class="fa fa-angle-right"></i>Time Attendance</a></li>
+                  
+              
+              
+              <li><a href="../productpage2.html"> <i class="fa fa-angle-right"></i> Access Control</a></li>
+        <li><a href="../productpage2.html"> <i class="fa fa-angle-right"></i>Entrance Control</a></li>
+        <li><a href="../productpage2.html"> <i class="fa fa-angle-right"></i> Elevator Control</a></li>
+        <li><a href="../productpage2.html"> <i class="fa fa-angle-right"></i> Security Inspection</a></li>
+        <li><a href="../productpage2.html"> <i class="fa fa-angle-right"></i> Hotel Lock Systems</a></li>
+        <li><a href="../productpage2.html"> <i class="fa fa-angle-right"></i> Smart Lock</a></li>
+      
+
+               </ul>
+            
+            </div>
+            
+            
+             <div class="useful_link_div">
+               <ul class="service_list">
+            
+            
+              <li><a href="../productpage2.html"> <i class="fa fa-angle-right"></i> Guard Patrolling System</a></li>
+        <li><a href="../productpage2.html"> <i class="fa fa-angle-right"></i> Gate Automation</a></li>
+        <li><a href="../productpage2.html"> <i class="fa fa-angle-right"></i> Canteen Management</a></li>
+        <li><a href="../productpage2.html"> <i class="fa fa-angle-right"></i> Visitor Management</a></li>
+                          <li><a href="../productpage2.html"> <i class="fa fa-angle-right"></i>    Video Door Phone</a></li>
+              <li><a href="../productpage2.html"> <i class="fa fa-angle-right"></i>Burglar Alarm</a></li>
+              <li><a href="../productpage2.html"> <i class="fa fa-angle-right"></i> School Timer</a></li>
+              <li><a href="../productpage2.html"> <i class="fa fa-angle-right"></i> Fire Alarm System</a></li>
+              
+             
+
+               </ul>
+            
+            </div>
+            
+            <div class="useful_link_div">
+               <ul class="service_list">
+            
+            
+              <li><a href="../productpage2.html"> <i class="fa fa-angle-right"></i> Safety Lockers</a></li>
+
+              <li><a href="../productpage2.html"> <i class="fa fa-angle-right"></i>Epabx</a></li>
+              <li><a href="../productpage2.html"> <i class="fa fa-angle-right"></i> Networking</a></li>
+              <li><a href="../productpage2.html"> <i class="fa fa-angle-right"></i>Vehicle Tracking</a></li>
+              <li><a href="../productpage2.html"> <i class="fa fa-angle-right"></i> PA Systems</a></li>
+              <li><a href="../productpage2.html"> <i class="fa fa-angle-right"></i>Projectors</a></li>
+              <li><a href="../productpage2.html"> <i class="fa fa-angle-right"></i> Smart Class Room</a></li>
+              <li><a href="../productpage2.html"> <i class="fa fa-angle-right"></i> Softwares</a></li>
+
+               </ul>
+            
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            </div>
+            <div class="footer_part4">
+               <h4>Timing Hours</h4>
+               <ul class="timing_list">
+                  <li>Mon to Sat  -  08:30AM to 7:30PM</li>
+                  <li>Sun - Closed</li>
+               </ul>
+            
+             <h4>Latest Work</h4>
+               <ul class="work_photos">
+                  <li><img src="images/footer-work-1-1.png"></img></li>
+                  <li><img src="images/footer-work-1-2.png"></img></li>
+                  <li><img src="images/footer-work-1-3.png"></img></li>
+                  <li><img src="images/footer-work-1-4.png"></img></li>
+                  <li><img src="images/footer-work-1-5.png"></img></li>
+                  <li><img src="images/footer-work-1-6.png"></img></li>
+               </ul>
+            
+            
+            
+            
+            
+            
+            
+            
+            </div>
+         </div>
+      </div>
+      <div class="footer_bottom">
+         <div class="pagecenter">
+            <p><a href="#">Bioteknix</a> © 2019 All Right Reserved</p>
+         </div>
+      </div>
+   </div>
+   <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+   </script>
+   <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+   <script id="rendered-js">
+      $('.count').each(function () {
+        $(this).prop('Counter', 0).animate({
+          Counter: $(this).text() },
+        {
+          duration: 4000,
+          easing: 'swing',
+          step: function (now) {
+            $(this).text(Math.ceil(now));
+          } });
+      
+      });
+      //# sourceURL=pen.js
+          
+   </script>
+   <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+   <script src='https://cdn.jsdelivr.net/bxslider/4.1.1/jquery.bxslider.min.js'></script>
+   <script id="rendered-js">
+      $('.bxslider').bxSlider({
+        minSlides: 1,
+        maxSlides: 8,
+        slideWidth: 189,
+        slideMargin: 0,
+        ticker: true,
+        speed: 50000 });
+      //# sourceURL=pen.js
+          
+   </script>
+   <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+   <script src='https://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js'></script>
+   <script id="rendered-js">
+      $().ready(function () {
+        $('.slick-carousel').slick({
+          arrows: true,
+          rows: 2,
+          slidesPerRow: 3,
+          centerPadding: "0px",
+          dots: false,
+          slidesToShow: 4,
+          touchThreshold: 500,
+          infinite: false });
+      
+      });
+      //# sourceURL=pen.js
+          
+   </script>
+   <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnavsite");
+        if (x.className === "topnavsite") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnavsite";
+        }
+      }
+   </script>
+   <script>
+      /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+      var dropdown = document.getElementsByClassName("dropdown-btnnet");
+      var i;
+      
+      for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+        } else {
+        dropdownContent.style.display = "block";
+        }
+        });
+      }
+   </script>
+</body>
+</html>

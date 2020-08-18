@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<head>
+   <title>Cameron - Home automation CCTV Security</title>
+   <script></script>
+   <link rel="shortcut icon" type="image/png" href="images/bioteknix.png"/>
+   <style></style>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href="css/style.css" type="text/css" rel="stylesheet">
+   <link href="css/1-horizontal.css" type="text/css" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Oswald:200,300,400,500,600,700|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+   <meta name="apple-mobile-web-app-title" content="CodePen">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+   <link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <style>
+      * {box-sizing: border-box;}
+      body {font-family: Verdana, sans-serif;}
+      .mySlides {display: none;}
+      .herobackimg {vertical-align: middle;height: 500px;width:100%;}
+      /* Slideshow container */
+      .slideshow-container {
+      max-width: 100%;
+      position: relative;
+      margin: auto;
+      }
+      /* The dots/bullets/indicators */
+      .dot {
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+      }
+      /* Fading animation */
+      .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+      }
+      @-webkit-keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+      }
+      @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+      }
+   </style>
+   </style>
+   <style>
+      .topnav {
+      overflow: hidden;
+      }
+      .topnav a {
+      float: left;
+      display: block;font-weight: 500;
+      font-size: 17px;
+      color: #182345;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none; font-family: "Montserrat", sans-serif;
+      }
+      .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+      }
+      .topnav .icon {
+      display: none;
+      }
+      @media screen and (max-width: 600px) {
+      .topnav a:not(:first-child) {display: none;}
+      .topnav a.icon {
+      float: right;
+      display: block;
+      }
+      }
+      @media screen and (max-width: 600px) {
+      .topnav.responsive {position: relative;}
+      .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+      }
+      .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+      }
+      }
+   </style>
+   <script>
+      window.console = window.console || function(t) {};
+   </script>
+   <script>
+      if (document.location.search.match(/type=embed/gi)) {
+        window.parent.postMessage("resize", "*");
+      }
+   </script>
+   <style>
+   </style>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+   <style>
+      .bx-wrapper {
+      width: 100%;max-width: 100% !important;
+      }
+      .bx-wrapper li {
+      margin-top: -16px !important;
+      }
+   </style>
+   <script>
+      window.console = window.console || function(t) {};
+   </script>
+   <script>
+      if (document.location.search.match(/type=embed/gi)) {
+        window.parent.postMessage("resize", "*");
+      }
+   </script>
+   <link rel='stylesheet' href='https://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.css'>
+   <style>
+      .slick-carousel.slick-initialized.slick-slider {
+      width: 100%;
+      float: left;
+      }
+      .slick-list.draggable {
+      float: left;
+      width: 100%;
+      }
+      .slick-track {
+      float: left;
+      width: 100%;
+      }
+      .slick-slide.slick-active {
+      float: left;
+      width: 24%;margin:0em 0.5em;
+      }
+      body .slick-slide .slide-content {
+      margin: 0 !important;
+      padding: 50px 30px !important;
+      background: #fff !important;
+      }
+      .slide-content {
+      float: left;
+      width: 100%;
+      }
+      .slick-list.draggable {
+      float: left;
+      width: 100%;
+      height: 345px;
+      overflow: hidden;
+      }
+      body .slick-prev {
+      top: 10em;
+      left: -3em !important;
+      }
+      .slick-next {
+      top: 10em !important;
+      right: -4em !important;
+      }
+      body .slick-slide .slide-content {
+      margin: 0 10%;
+      padding: 50px 100px;
+      background: #ebf0eb;
+      }
+      body .slick-list {
+      margin: 20px 0px;
+      }
+      body .slick-prev,
+      body .slick-next {
+      position: absolute;
+      right: 10%;
+      background: #57b957;
+      border: none;
+      color: transparent;
+      width: 32px;
+      height: 37px;
+      }
+      body .slick-prev:before,
+      body .slick-next:before {
+      content: ">";
+      color: #fff;
+      font-size: 25px;
+      }
+      body .slick-prev {
+      left: 10%;
+      }
+      body .slick-prev:before {
+      content: "<";
+      }
+      body .slick-dots {
+      list-style: none;
+      margin: 0 auto;
+      text-align: center;
+      }
+      body .slick-dots li {
+      display: inline-block;
+      }
+      body .slick-dots li button {
+      transition: 0.2s background-color ease-in-out 0s;
+      border: none;
+      padding: 0;
+      color: transparent;
+      width: 10px;
+      height: 10px;
+      background-color: #777;
+      margin-right: 10px;
+      border-radius: 50%;
+      }
+      body .slick-dots li.slick-active button {
+      background-color: #fff;
+      }
+   </style>
+   <script>
+      window.console = window.console || function(t) {};
+   </script>
+   <script>
+      if (document.location.search.match(/type=embed/gi)) {
+        window.parent.postMessage("resize", "*");
+      }
+   </script>
+</head>
+<body translate="no">
+   <div class="wrapper">
+      <div class="header_top">
+         <div class="header_top_left">
+            <p><i class="fa fa-envelope-o"></i><a href="mailto:info@bioteknix.com">info@bioteknix.com</a></p>
+         </div>
+         <div class="header_top_right">
+            <ul class="header_top_menu">
+               <li><i class="fa fa-map-marker"></i><a href="#">Iyyapanthangal , Chennai</a></li>
+               <li><i class="fa fa-headphones"></i><a href="tel:+919791108324"> +91-9791108324</a></li>
+            </ul>
+         </div>
+      </div>
+      <div class="header_bottom_combined">
+         <div class="header_bottom">
+            <div class="topnav" id="myTopnav">
+               <a href="#home" class="active"><img class="logo1" src="images/newedited.png"></img></a>
+               <a href="#news" id="newchg">Home</a>
+               <a href="#contact" id="newchg">About</a>
+               <a href="#news" id="newchg">Product</a>
+               <a href="#about" id="newchg">Services</a>
+               <a href="#contact" id="newchg">Our Clients</a>
+               <a href="#about" id="newchg">Resources</a>
+               <a href="#about" id="newchg">Contact</a>
+               <a href="#about" id="newchg">Blog</a>
+               <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+               <i class="fa fa-bars"></i>
+               </a>
+            </div>
+         </div>
+         <div class="header_social_icon">
+            <ul class="social_media">
+               <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.bioteknix.in" target="_blank"><i class="fa fa-facebook-f"></i></a></li>
+               <li><a href="https://twitter.com/intent/tweet?text=Check+out+url=http://www.bioteknix.in" target="_blank"><i class="fa fa-twitter"></i></a></li>
+               <li><a href="https://www.linkedin.com/cws/share?url=http-www-bioteknix-in" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://api.whatsapp.com/send?text=http://www.bioteknix.in" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
+            </ul>
+         </div>
+      </div>
+      <div class="hero_section">
+         <!-- <h3>keep <b>safe & happy </b> your mind</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod </p>
+            <button class="cta1">Get Appointment</button>-->
+         <!--<img src="images/heroimg1.png"></img>-->
+         <div class="slideshow-container">
+            <div class="mySlides fade">
+               <img src="images/heroimg1.png" class="herobackimg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+               <img src="images/banner1.png" class="herobackimg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+               <img src="images/banner2.png" class="herobackimg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+               <img src="images/banner3.png" class="herobackimg" style="width:100%">
+            </div>
+         </div>
+         <br>
+         <div style="text-align:center;display:none;">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+         </div>
+      </div>
+      <div class="section_one">
+         <div class="pagecenter2">
+            <div class="section_one_combined">
+               <div class="section_one_title">
+                  <h5 class="offers">solutions</h5>
+                  <h3>our best solutions</h3>
+               </div>
+               <div class="newedit_slicky_slider">
+                  <div class="slick-carousel">
+                     <div>
+                        <div class="slide-content">
+                           <img class="slickedit_img" src="icons/education.png"></img>
+                           <h3>Education
+                           </h3>
+                           <p>Excepteur sint occaecat cupidatat non proi dent sunt in culpa qui officia deserunt mollit.</p>
+                           <a href="#" class="readmore">Read More</a>
+                        </div>
+                     </div>
+                     <div>
+                        <div class="slide-content">
+                           <img class="slickedit_img" src="icons/government.png"></img>
+                           <h3>government
+                           </h3>
+                           <p>Excepteur sint occaecat cupidatat non proi dent sunt in culpa qui officia deserunt mollit.</p>
+                           <a href="#" class="readmore">Read More</a>
+                        </div>
+                     </div>
+                     <div>
+                        <div class="slide-content">
+                           <img class="slickedit_img" src="icons/healthcare.png"></img>
+                           <h3>health care
+                           </h3>
+                           <p>Excepteur sint occaecat cupidatat non proi dent sunt in culpa qui officia deserunt mollit.</p>
+                           <a href="#" class="readmore">Read More</a>
+                        </div>
+                     </div>
+                     <div>
+                        <div class="slide-content">
+                           <img class="slickedit_img" src="icons/finanace.png"></img>
+                           <h3>Finanace
+                           </h3>
+                           <p>Excepteur sint occaecat cupidatat non proi dent sunt in culpa qui officia deserunt mollit.</p>
+                           <a href="#" class="readmore">Read More</a>
+                        </div>
+                     </div>
+                     <div>
+                        <div class="slide-content">
+                           <img class="slickedit_img" src="icons/retail.png"></img>
+                           <h3>Retail
+                           </h3>
+                           <p>Excepteur sint occaecat cupidatat non proi dent sunt in culpa qui officia deserunt mollit.</p>
+                           <a href="#" class="readmore">Read More</a>
+                        </div>
+                     </div>
+                     <div>
+                        <div class="slide-content">
+                           <img class="slickedit_img" src="icons/office.png"></img>
+                           <h3>Office
+                           </h3>
+                           <p>Excepteur sint occaecat cupidatat non proi dent sunt in culpa qui officia deserunt mollit.</p>
+                           <a href="#" class="readmore">Read More</a>
+                        </div>
+                     </div>
+                     <div>
+                        <div class="slide-content">
+                           <img class="slickedit_img" src="icons/supplychain.png"></img>
+                           <h3>supply chain
+                           </h3>
+                           <p>Excepteur sint occaecat cupidatat non proi dent sunt in culpa qui officia deserunt mollit.</p>
+                           <a href="#" class="readmore">Read More</a>
+                        </div>
+                     </div>
+                     <div>
+                        <div class="slide-content">
+                           <img class="slickedit_img" src="icons/property.png"></img>
+                           <h3>Property management
+                           </h3>
+                           <p>Excepteur sint occaecat cupidatat non proi dent sunt in culpa qui officia deserunt mollit.</p>
+                           <a href="#" class="readmore">Read More</a>
+                        </div>
+                     </div>
+                     <div>
+                        <div class="slide-content">
+                           <img class="slickedit_img" src="icons/hospitality.png"></img>
+                           <h3>hospitality
+                           </h3>
+                           <p>Excepteur sint occaecat cupidatat non proi dent sunt in culpa qui officia deserunt mollit.</p>
+                           <a href="#" class="readmore">Read More</a>
+                        </div>
+                     </div>
+                     <div>
+                        <div class="slide-content">
+                           <img class="slickedit_img" src="icons/residential.png"></img>
+                           <h3>residential
+                           </h3>
+                           <p>Excepteur sint occaecat cupidatat non proi dent sunt in culpa qui officia deserunt mollit.</p>
+                           <a href="#" class="readmore">Read More</a>
+                        </div>
+                     </div>
+                     <div>
+                        <div class="slide-content">
+                           <img class="slickedit_img" src="icons/public.png"></img>
+                           <h3>Public Facilities
+                           </h3>
+                           <p>Excepteur sint occaecat cupidatat non proi dent sunt in culpa qui officia deserunt mollit.</p>
+                           <a href="#" class="readmore">Read More</a>
+                        </div>
+                     </div>
+                     <div>
+                        <div class="slide-content">
+                           <img class="slickedit_img" src="icons/construction.png"></img>
+                           <h3>Construction
+                           </h3>
+                           <p>Excepteur sint occaecat cupidatat non proi dent sunt in culpa qui officia deserunt mollit.</p>
+                           <a href="#" class="readmore">Read More</a>
+                        </div>
+                     </div>
+                     <div>
+                        <div class="slide-content">
+                           <img class="slickedit_img" src="icons/hospitality.png"></img>
+                           <h3>hospitality
+                           </h3>
+                           <p>Excepteur sint occaecat cupidatat non proi dent sunt in culpa qui officia deserunt mollit.</p>
+                           <a href="#" class="readmore">Read More</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="section_one_group" style="display:none;">
+                  <div class="section_one_part">
+                     <img src="images/offer1.png"></img>
+                     <h3>Home
+                        Security
+                     </h3>
+                     <p>Excepteur sint occaecat cupidatat non proi dent sunt in culpa qui officia deserunt mollit.</p>
+                     <a href="#" class="readmore">Read More</a>
+                  </div>
+                  <div class="section_one_part">
+                     <img src="images/offer2.png"></img>
+                     <h3>Business
+                        Security
+                     </h3>
+                     <p>Excepteur sint occaecat cupidatat non proi dent sunt in culpa qui officia deserunt mollit.</p>
+                     <a href="#" class="readmore">Read More</a>
+                  </div>
+                  <div class="section_one_part">
+                     <img src="images/offer3.png"></img>
+                     <h3>Information
+                        Security
+                     </h3>
+                     <p>Excepteur sint occaecat cupidatat non proi dent sunt in culpa qui officia deserunt mollit.</p>
+                     <a href="#" class="readmore">Read More</a>
+                  </div>
+                  <div class="section_one_part">
+                     <img src="images/offer4.png"></img>
+                     <h3>Useful
+                        Support
+                     </h3>
+                     <p>Excepteur sint occaecat cupidatat non proi dent sunt in culpa qui officia deserunt mollit.</p>
+                     <a href="#" class="readmore">Read More</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="section_two">
+         <div class="pagecenter">
+            <div class="section_two_group">
+               <div class="section_two_left">
+                  <h5 class="story">some story</h5>
+                  <h3>20 Years Of Experience</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiu smod tempor incidunt enim ad minim veniam quis nostrud exerc tation ullamco laboris nisi ut aliquip ex ea commodo con sequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
+                  <ul class="story_points">
+                     <li><i class="fa fa-circle-o"></i>Convallis ligula ligula gravida tristique.</li>
+                     <li><i class="fa fa-circle-o"></i>Convallis ligula ligula gravida tristique.</li>
+                  </ul>
+                  <button class="cta2">Get Started</button>
+               </div>
+               <div class="section_two_right">
+                  <img src="images/cameraimg.png"></img>
+               </div>
+            </div>
+            <div class="section_two_aim_group">
+               <div class="aim1_parts">
+                  <h5 class="aim1">01</h5>
+                  <h4>Our Stories</h4>
+                  <p>Retro tattooed tousled, disrupt portland
+                     synth slow-carb brooklyn.
+                  </p>
+               </div>
+               <div class="aim1_parts">
+                  <h5 class="aim1">02</h5>
+                  <h4>Our Mission</h4>
+                  <p>Retro tattooed tousled, disrupt portland
+                     synth slow-carb brooklyn.
+                  </p>
+               </div>
+               <div class="aim1_parts">
+                  <h5 class="aim1">03</h5>
+                  <h4>Our Vision</h4>
+                  <p>Retro tattooed tousled, disrupt portland
+                     synth slow-carb brooklyn.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="section_three">
+         <div class="pagecenter">
+            <h5 class="running">keep running</h5>
+            <h3>Looking for Certified Trainer</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod </p>
+            <button class="cta1">Get Appointment</button>
+         </div>
+      </div>
+      <div class="section_four">
+         <div class="pagecenter">
+            <div class="section_four_title">
+               <h5 class="services">Services</h5>
+               <h3>Service We Provide</h3>
+            </div>
+            <div class="service_newprovide">
+			
+            </div>
+            <div class="section_four_group">
+               <div class="section_four_part">
+                  <img src="images/service-1-1.jpg"></img>
+                  <h4>Body Temperature & Mask Detection</h4>
+                  <p>Excepteur sint occaecat cupidatat non proi dent, sunt in culpa qui officia deserunt mollit anim id est.</p>
+                  <button class="readmore1">read more</button>
+               </div>
+               <div class="section_four_part">
+                  <img src="images/service-1-2.jpg"></img>
+                  <h4>Time Attendance</h4>
+                  <p>Excepteur sint occaecat cupidatat non proi dent, sunt in culpa qui officia deserunt mollit anim id est.</p>
+                  <button class="readmore1">read more</button>
+               </div>
+               <div class="section_four_part">
+                  <img src="images/service-1-3.jpg"></img>
+                  <h4>Access Control</h4>
+                  <p>Excepteur sint occaecat cupidatat non proi dent, sunt in culpa qui officia deserunt mollit anim id est.</p>
+                  <button class="readmore1">read more</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="section_six" style="display:none;">
+         <div class="pagecenter">
+            <div class="section_six_combined">
+               <div class="section_six_group">
+                  <div class="section_six_left">
+                     <h5 class="loves">Love</h5>
+                     <h3>Why Love People?</h3>
+                     <div class="section_six_divided">
+                        <div class="sec_six_part1">
+                           <div class="sec_six_left">
+                              <a class="six_icon"><i class="fa fa-user"></i></a>
+                           </div>
+                           <div class="sec_six_right">
+                              <h5>Best Professional</h5>
+                              <p>Enim ad minim veniam nostrud exer
+                                 citation ullamco.
+                              </p>
+                           </div>
+                        </div>
+                        <div class="sec_six_part1">
+                           <div class="sec_six_left">
+                              <a class="six_icon"><i class="fa fa-star-o"></i></a>
+                           </div>
+                           <div class="sec_six_right">
+                              <h5>Always Honest</h5>
+                              <p>Enim ad minim veniam nostrud exer
+                                 citation ullamco.
+                              </p>
+                           </div>
+                        </div>
+                        <div class="sec_six_part1">
+                           <div class="sec_six_left">
+                              <a class="six_icon"><i class="fa fa-headphones"></i></a>
+                           </div>
+                           <div class="sec_six_right">
+                              <h5>24/7 Hours Support</h5>
+                              <p>Enim ad minim veniam nostrud exer
+                                 citation ullamco.
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="section_six_right">
+                     <img src="images/featured-1-1.jpg"></img>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="section_choose_us">
+         <div class="pagecenter">
+            <h5 class="choose">choose</h5>
+            <h3>why choose us</h3>
+            <div class="choose_combined">
+               <div class="choose_top">
+                  <div class="choose_part">
+                     <img src="icons/industry.png"></img>
+                     <h4>Exclusive Industry Knowledge</h4>
+                     <p>It requires extensive knowledge to work in a domain, which plays a key role for success, our team possesses exclusive domain knowledge of all the industries we serve. We add up resources with domain knowledge and always share our experience with our experts' team.</p>
+                  </div>
+                  <div class="choose_part">
+                     <img src="icons/expertise.png"></img>
+                     <h4>Expertise</h4>
+                     <p>We are adept in working in "state of art" amenities; our experts possess indomitable talent in engineering and commissioning of "cutting edge" technologies. Learning & adopting "high end" products is a part of growing, upgrading technologies is a quench to the thirst of skilled professionals.
+                     <p>
+                  </div>
+                  <div class="choose_part">
+                     <img src="icons/approach.png"></img>
+                     <h4>Integrated strategic Apporach</h4>
+                     <p>A strategic approach is integrating our efforts, skills, craftsmanship, technical knowledge and domain expertise into a solution packed. We have a practice of documenting our experience “Modus operandi” from the initial stage to the end for expert reference which helps us to equip and integrate.</p>
+                  </div>
+               </div>
+               <div class="choose_top">
+                  <div class="choose_part">
+                     <img src="icons/view.png"></img>
+                     <h4>We Don't View You as a Sale Or a Client</h4>
+                     <p>We don't see an assignment as another business opportunity despite we vision it as a call to serve you better, a chance to provide you the best. People would often say out of relationship they build business, we boast we build relationship through business.</p>
+                  </div>
+                  <div class="choose_part">
+                     <img src="icons/costbenefit.png"></img>
+                     <h4>Cost Benefits</h4>
+                     <p>Cost is defined, based on the availability of products as there is a direct link between demand and supply, our presence and expertise in the industry guarantees a choice of cost effective products which causes a remarkable reduction in budget cost.</p>
+                  </div>
+                  <div class="choose_part">
+                     <img src="icons/software.png"></img>
+                     <h4>Advanced Tools and Software</h4>
+                     <p>In an ever growing industry, products & software become outdated more often. Our practice is to offer latest sophisticated solution for your requirements. We believe the latest of all renders you more benefit and the appropriate gives you the comfort of sophistication.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="section_eight">
+         <div class="pagecenter">
+            <h5 class="working">Proccess</h5>
+            <h3>Working Proccess</h3>
+            <div class="working_group">
+               <div class="working_part1">
+                  <a class="rolenumber">01</a>
+                  <h4>You Order</h4>
+                  <p>Retro tattooed tousled, disrupt portland
+                     synth slow-carb brooklyn.
+                  </p>
+               </div>
+               <div class="working_part1">
+                  <a class="rolenumber">02</a>
+                  <h4>Installation</h4>
+                  <p>Retro tattooed tousled, disrupt portland
+                     synth slow-carb brooklyn.
+                  </p>
+               </div>
+               <div class="working_part1">
+                  <a class="rolenumber">03</a>
+                  <h4>Enjoy Your Safety</h4>
+                  <p>Retro tattooed tousled, disrupt portland
+                     synth slow-carb brooklyn.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="section_five">
+         <div class="pagecenter">
+            <div class="section_five_part">
+               <div class="fivepart1">
+                  <i class="fa fa-lock"></i>
+               </div>
+               <div class="fivepart2">
+                  <p><span class="count">200</span></p>
+                  <h6>lock installed</h6>
+               </div>
+            </div>
+            <div class="section_five_part">
+               <div class="fivepart1">
+                  <i class="fa fa-users" aria-hidden="true"></i>
+               </div>
+               <div class="fivepart2">
+                  <p><span class="count">746</span></p>
+                  <h6>Happy Customers</h6>
+               </div>
+            </div>
+            <div class="section_five_part">
+               <div class="fivepart1">
+                  <i class="fa fa-coffee fa-2x"></i>
+               </div>
+               <div class="fivepart2">
+                  <p><span class="count">3456</span></p>
+                  <h6>Coffe Cups</h6>
+               </div>
+            </div>
+            <div class="section_five_part">
+               <div class="fivepart1">
+                  <i class="fa fa-key"></i>
+               </div>
+               <div class="fivepart2">
+                  <p><span class="count">431</span></p>
+                  <h6>Premises Secured</h6>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="section_seven">
+         <div class="pagecenter">
+            <div class="section_seven_title">
+               <h5 class="running2">Testimonials</h5>
+               <h3>What Client Say</h3>
+            </div>
+            <div class="testimoninal_textslider">
+               <div id="slider">
+                  <div class="container">
+                     <div class="slide">
+                        <img class="slider_imagenew" src="images/testi1-1.jpg"></img>
+                        <p>
+                           The episode orbits? The panic overwhelms a fuse. The major lurks below the shower! The tactic founds the nut. Why can't a pardon toss the sexist exercise?
+                        </p>
+                        <h3>Loretta Bailey</h3>
+                        <h5>Happy Client</h5>
+                     </div>
+                     <div class="slide">
+                        <img class="slider_imagenew" src="images/testi1-2.jpg"></img>
+                        <p>
+                           The lasting astronomer balances the counter reminder. The trap hires the paradox. The employer watches the laser next to the exhausted historian. The water oils a breakfast.
+                        </p>
+                        <h3>Walter Doyle</h3>
+                        <h5>Happy Client</h5>
+                     </div>
+                     <div class="slide">
+                        <img class="slider_imagenew" src="images/testi1-1.jpg"></img>
+                        <p>
+                           Her birthday calculates past a juice! The envy succeeds across an evident jelly. An afternoon shifts opposite a bust. The tired clash divides a widest sneak. The satire springs onto a misfortune after the inclined car.
+                        </p>
+                        <h3>Loretta Bailey</h3>
+                        <h5>Happy Client</h5>
+                     </div>
+                     <div class="slide">
+                        <img class="slider_imagenew" src="images/testi1-2.jpg"></img>
+                        <p>
+                           A distributed actor pilots the null pencil. The wild wolfs a damp cage inside the breach. The blank toes the line underneath the arc. The sheep migrates within the transcript.
+                        </p>
+                        <h3>Walter Doyle</h3>
+                        <h5>Happy Client</h5>
+                     </div>
+                     <div class="slide">
+                        <img class="slider_imagenew" src="images/testi1-1.jpg"></img>
+                        <p>
+                           The suspected book hums opposite the unacceptable urge. The warning goodbye searches the substitute. This damp loses before the president. The slave elects the north inside an exciting salt.
+                        </p>
+                        <h3>Loretta Bailey</h3>
+                        <h5>Happy Client</h5>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="section_article"style="display:none;">
+         <div class="pagecenter">
+            <div class="article_title">
+               <h5 class="running3">News</h5>
+               <h3>Latest Articles</h3>
+            </div>
+            <div class="article_combined_group">
+               <div class="article_left">
+                  <div class="article_part">
+                     <div class="part_left">
+                        <h4>TS2000 Single - Lane Turnstile Series</h4>
+                        <ul class="art_icon">
+                           <li><i class="fa fa-user-o"></i>Admin</li>
+                           <li><i class="fa fa-calendar-o"></i>350</li>
+                           <li><i class="fa fa-comments-o"></i>30</li>
+                        </ul>
+                        <button class="cta_read">read more</button>
+                     </div>
+                     <div class="part_right">
+                        <img src="images/article1.jpg"></img>
+                     </div>
+                  </div>
+                  <div class="article_part">
+                     <div class="part_left">
+                        <h4>FaceDepot-7A with Tripod Turnstile Series</h4>
+                        <ul class="art_icon">
+                           <li><i class="fa fa-user-o"></i>Admin</li>
+                           <li><i class="fa fa-calendar-o"></i>350</li>
+                           <li><i class="fa fa-comments-o"></i>30</li>
+                        </ul>
+                        <button class="cta_read">read more</button>
+                     </div>
+                     <div class="part_right">
+                        <img src="images/article2.jpg"></img>
+                     </div>
+                  </div>
+               </div>
+               <div class="article_right">
+                  <div class="art_right">
+                     <div class="art_left_part">
+                        <img src="images/article3.jpg"></img>
+                     </div>
+                     <div class="art_right_part">
+                        <h4>Proface X Series - Face & Palm Verification</h4>
+                        <ul class="art_icon">
+                           <li><i class="fa fa-user-o"></i>Admin</li>
+                           <li><i class="fa fa-calendar-o"></i>350</li>
+                           <li><i class="fa fa-comments-o"></i>30</li>
+                        </ul>
+                        <button class="cta_read">read more</button>
+                     </div>
+                  </div>
+                  <div class="art_right">
+                     <div class="art_left_part">
+                        <img src="images/article4.jpg"></img>
+                     </div>
+                     <div class="art_right_part">
+                        <h4>Proface X Access Control</h4>
+                        <ul class="art_icon">
+                           <li><i class="fa fa-user-o"></i>Admin</li>
+                           <li><i class="fa fa-calendar-o"></i>350</li>
+                           <li><i class="fa fa-comments-o"></i>30</li>
+                        </ul>
+                        <button class="cta_read">read more</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="section_nine">
+         <div class="pagecenter">
+            <ul class="bxslider">
+               <li><img src="images/brands-1-1.png" /></li>
+               <li><img src="images/brands-1-2.png" /></li>
+               <li><img src="images/brands-1-3.png" /></li>
+               <li><img src="images/brands-1-4.png" /></li>
+               <li><img src="images/brands-1-5.png" /></li>
+            </ul>
+         </div>
+      </div>
+      <div class="footer_top">
+         <div class="pagecenter">
+            <div class="footer_part1">
+               <h4 class="footer_logo"><img src="images/transparent_favicon.png"></img>Bioteknix</h4>
+               <p>No.14/118, Gangai Amman Koil Street, Periyakoluthuvancherri, Iyyapanthangal, , Tamilnadu, -600122., </p>
+               <a href="tel:+919791108324">
+                  <p>+91-9791108324</p>
+               </a>
+               <a href="tel:+918939856560">
+                  <p>+91-8939856560</p>
+               </a>
+               <a href="tel:+918939856563">
+                  <p>+91-8939856563</p>
+               </a>
+               <a href="http://www.bioteknix.com" target="_blank">
+                  <p>http://www.bioteknix.com</p>
+               </a>
+               <a href="mailto:info@bioteknix.com">
+                  <p>info@bioteknix.com</p>
+               </a>
+               <ul class="social_media1">
+                  <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.bioteknix.in" target="_blank"><i class="fa fa-facebook-f"></i></a></li>
+                  <li><a href="https://twitter.com/intent/tweet?text=Check+out+url=http://www.bioteknix.in" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="https://www.linkedin.com/cws/share?url=http-www-bioteknix-in" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                  <li><a href="https://api.whatsapp.com/send?text=http://www.bioteknix.in" target="_blank"><i class="fa fa-whatsapp"></i></a>
+                  </li>
+               </ul>
+            </div>
+            <div class="footer_part2">
+               <h4>services</h4>
+               <ul class="service_list">
+                  <li><a href="#"><i class="fa fa-angle-right"></i> company history</a></li>
+                  <li><a href="#"> <i class="fa fa-angle-right"></i>about us</a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i>contact  us</a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i>services</a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i>privacy policy</a></li>
+               </ul>
+            </div>
+            <div class="footer_part3">
+               <h4>Latest Work</h4>
+               <ul class="work_photos">
+                  <li><img src="images/footer-work-1-1.png"></img></li>
+                  <li><img src="images/footer-work-1-2.png"></img></li>
+                  <li><img src="images/footer-work-1-3.png"></img></li>
+                  <li><img src="images/footer-work-1-4.png"></img></li>
+                  <li><img src="images/footer-work-1-5.png"></img></li>
+                  <li><img src="images/footer-work-1-6.png"></img></li>
+               </ul>
+            </div>
+            <div class="footer_part4">
+               <h4>Timing Hours</h4>
+               <ul class="timing_list">
+                  <li>Mon to Sat  -  08:30AM to 7:30PM</li>
+                  <li>Sun - Closed</li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div class="footer_bottom">
+         <div class="pagecenter">
+            <p><a href="#">Bioteknix</a> © 2019 All Right Reserved</p>
+         </div>
+      </div>
+   </div>
+   <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+   </script>
+   <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+   <script id="rendered-js">
+      $('.count').each(function () {
+        $(this).prop('Counter', 0).animate({
+          Counter: $(this).text() },
+        {
+          duration: 4000,
+          easing: 'swing',
+          step: function (now) {
+            $(this).text(Math.ceil(now));
+          } });
+      
+      });
+      //# sourceURL=pen.js
+          
+   </script>
+   <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+   <script src='https://cdn.jsdelivr.net/bxslider/4.1.1/jquery.bxslider.min.js'></script>
+   <script id="rendered-js">
+      $('.bxslider').bxSlider({
+        minSlides: 1,
+        maxSlides: 8,
+        slideWidth: 189,
+        slideMargin: 0,
+        ticker: true,
+        speed: 50000 });
+      //# sourceURL=pen.js
+          
+   </script>
+   <script>
+      var slideIndex = 0;
+      showSlides();
+      
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 8000); // Change image every 2 seconds
+      }
+   </script>
+   <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+   <script src='https://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js'></script>
+   <script id="rendered-js">
+      $().ready(function () {
+        $('.slick-carousel').slick({
+          arrows: true,
+          rows: 2,
+          slidesPerRow: 3,
+          centerPadding: "0px",
+          dots: false,
+          slidesToShow: 4,
+          touchThreshold: 500,
+          infinite: false });
+      
+      });
+      //# sourceURL=pen.js
+          
+   </script>
+</body>
+</html>
