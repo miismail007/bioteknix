@@ -26,5 +26,9 @@ function topFunction() {
 	// Wait for window load
 	$(window).load(function() {
 		// Animate loader off screen
-		$(".se-pre-con").fadeOut("slow");;
+		
+        setTimeout(function(){
+           $('.se-pre-con').hide();// or fade, css display however you'd like.
+        }, 2100);
+        // $(".se-pre-con").fadeOut("slow");
 	});
