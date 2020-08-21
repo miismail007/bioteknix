@@ -2224,8 +2224,7 @@ margin-bottom: 1em;
 .clients_herosection {
     float: left;
     width: 100%;
-    background: url('../images/clients-inner-banner-bg.jpg') center center no-repeat;
-        background-size: auto;
+    background: #57b957;
     background-size: auto;
     background-size: auto;
    /*object-fit: contain;*/
@@ -2236,11 +2235,12 @@ margin-bottom: 1em;
 
 
 .clients_herosection h3 {
-    color: #000;
+    color: #fff;
     font-size: 42px;
     line-height: 50px;
     font-weight: 700;
     margin-top: 10px;
+    text-align: center;
     letter-spacing: ;
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
