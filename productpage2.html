@@ -22,6 +22,9 @@ Bioteknix Private Limited|Biometric Time & Attendance System|Touchless Attendanc
    <link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
    <style>
+    *{
+      text-decoration: none;
+    }
       /* Style the tab12 */
       .tab12 {
       float: left;
@@ -727,25 +730,38 @@ Bioteknix Private Limited|Biometric Time & Attendance System|Touchless Attendanc
       <div class="product_group_part">
          <div class="pagecenter">
             <div class="product_left">
-               <h4>our products</h4>
-               <div class="tab12">
-                  <button class="tab12links" onclick="openCity(event, 'London12')" id="defaultOpen12"><i class="fa fa-angle-right"></i>Body Temperature & Mask Detection
-                  </button>
-                  <button class="tab12links" onclick="openCity(event, 'Paris12')"><i class="fa fa-angle-right"></i>Time Attendance</button>
-                  <button class="tab12links" onclick="openCity(event, 'Tokyo12')"><i class="fa fa-angle-right"></i>Access Control</button>
-                  <button class="tab12links" onclick="openCity(event, 'Tokyo3')"><i class="fa fa-angle-right"></i>Green Label</button>
-                  <button class="tab12links" onclick="openCity(event, 'Tokyo4')"><i class="fa fa-angle-right"></i>Video Surveillance</button>
-                  <button class="tab12links" onclick="openCity(event, 'Tokyo5')"><i class="fa fa-angle-right"></i>Smart Lock</button>
-                  <button class="tab12links" onclick="openCity(event, 'Tokyo6')"><i class="fa fa-angle-right"></i>Biometrics</button>
-                  <button class="tab12links" onclick="openCity(event, 'Tokyo7')"><i class="fa fa-angle-right"></i>Entrance Control</button>
-                  <button class="tab12links" onclick="openCity(event, 'Tokyo8')"><i class="fa fa-angle-right"></i>Security Inspection</button>
-                  <button class="tab12links" onclick="openCity(event, 'Tokyo9')"><i class="fa fa-angle-right"></i>ECO Product</button>
-                  <button class="tab12links" onclick="openCity(event, 'Tokyo10')"><i class="fa fa-angle-right"></i>Multi-purpose Integration</button>
-               </div>
+                <h4>our products</h4>
+                <div class="tab12" style="text-transform: capitalize;">
+                    <a href="productpage2.html"><button class="tab12links active" ><i class="fa fa-angle-right"></i>Body Temperature & Mask Detection</button></a>
+                    <a href="cctv.html"><button class="tab12links" ><i class="fa fa-angle-right"></i>CCTV</button></a>
+                    <a href="timeattendance.html"><button class="tab12links" ><i class="fa fa-angle-right"></i>time attendance</button></a>
+                    <a href="accesscontrol.html"><button class="tab12links" ><i class="fa fa-angle-right"></i>access control</button></a>
+                    <a href="entrancecontrol.html"><button class="tab12links" ><i class="fa fa-angle-right"></i>Entrance control</button></a>
+                    <a href="elevatorcontrol.html"><button class="tab12links" > <i class="fa fa-angle-right"></i>Elevator control</button></a>
+                    <a href="securityinspection.html"><button class="tab12links" > <i class="fa fa-angle-right"></i>security inspection</button></a>
+                    <a href="hotellock.html"><button class="tab12links" > <i class="fa fa-angle-right"></i>Hotel lock system</button></a>
+                    <a href="smartlock.html"><button class="tab12links" ><i class="fa fa-angle-right"></i>smart lock</button></a>
+                    <a href="guardpatrolling.html"><button class="tab12links" ><i class="fa fa-angle-right"></i>guard patrolling system</button></a>
+                    <a href="gateautomation.html"><button class="tab12links" ><i class="fa fa-angle-right"></i>gate automation</button></a>
+                    <a href="canteenmanagement.html"><button class="tab12links" >   <i class="fa fa-angle-right"></i>canteen management</button></a>
+                    <a href="visitormanagement.html"><button class="tab12links" > <i class="fa fa-angle-right"></i>visitor management</button></a>
+                    <a href="videodoor.html"><button class="tab12links" > <i class="fa fa-angle-right"></i>video door phone</button></a>
+                    <a href="burglaralarm.html"><button class="tab12links" > <i class="fa fa-angle-right"></i>burglar alarm</button></a>
+                    <a href="schooltimer.html"><button class="tab12links" > <i class="fa fa-angle-right"></i>school timer</button></a>
+                    <a href="firealarm.html"><button class="tab12links" >  <i class="fa fa-angle-right"></i>fire alarm system</button></a>
+                    <a href="safetylockers.html"><button class="tab12links" > <i class="fa fa-angle-right"></i>safety lockers</button></a>
+                    <a href="epabx.html"><button class="tab12links" >  <i class="fa fa-angle-right"></i>EPABX</button></a>
+                    <a href="networking.html"><button class="tab12links" > <i class="fa fa-angle-right"></i>networking</button></a>
+                    <a href="vehicletracking.html"><button class="tab12links" >   <i class="fa fa-angle-right"></i>vehicle tracking</button></a>
+                    <a href="pasystems.html"><button class="tab12links" > <i class="fa fa-angle-right"></i>PA systems</button></a>
+                    <a href="projectors.html"><button class="tab12links" > <i class="fa fa-angle-right"></i>projectors</button></a>
+                    <a href="smartclass.html"><button class="tab12links" ><i class="fa fa-angle-right"></i>smart class rooms</button></a>
+                    <a href="softwares.html"><button class="tab12links" > <i class="fa fa-angle-right"></i>softwares</button></a>
+                </div>
             </div>
             <div class="product_right">
                <h4> product catogories</h4>
-               <div id="London12" class="tab12content">
+               <div id="London12" class="tab12content" style="display:block">
                   <div class="product_catalog">
                      <div id="myBtnContainerfilpar">
                         <button class="btnfilpar activepar" onclick="filterSelectionpar('all')"> Show all</button>
@@ -793,139 +809,7 @@ Bioteknix Private Limited|Biometric Time & Attendance System|Touchless Attendanc
                      </div>
                   </div>
                </div>
-               <div id="Paris12" class="tab12content">
-                  
-				    <div class="product_catalog">
-                     <div id="myBtnContainerfilpar">
-                        <button class="btnfilpar activepar" onclick="filterSelectionpar('all')" style="display:none;"> Show all</button>
-                        <button class="btnfilpar" onclick="filterSelectionpar('cars')"> Face</button>
-                        <button class="btnfilpar" onclick="filterSelectionpar('animals')">Finger Print</button>
-                        <button class="btnfilpar" onclick="filterSelectionpar('fruits')">Hybrid Biometrics</button>
-                        <button class="btnfilpar" onclick="filterSelectionpar('colors')"> RFID</button>
-                        <button class="btnfilpar" onclick="filterSelectionpar('colo')"> Portable Devices</button>
-                        <button class="btnfilpar" onclick="filterSelectionpar('color')"> Software</button>
-                     </div>
-                     <div class="containerfilpar">
-                        <!-- <div class="filterDivfilpar cars">BMW</div>
-                           <div class="filterDivfilpar colors fruits">Orange</div>
-                           <div class="filterDivfilpar cars">Volvo</div>
-                           <div class="filterDivfilpar colors">Red</div>
-                           <div class="filterDivfilpar cars animals">Mustang</div>
-                           <div class="filterDivfilpar colors">Blue</div>
-                           <div class="filterDivfilpar animals">Cat</div>
-                           <div class="filterDivfilpar animals">Dog</div>
-                           <div class="filterDivfilpar fruits">Melon</div>
-                           <div class="filterDivfilpar fruits animals">Kiwi</div>
-                           <div class="filterDivfilpar fruits">Banana</div>
-                           <div class="filterDivfilpar fruits">Lemon</div>
-                           <div class="filterDivfilpar animals">Cow</div>-->
-                        <div class="pro_catalognw cars" onclick="location.href = 'product pages/horus.html';">
-                           <img src="images/catalogue/horus.png"></img>
-                           <p><a href="product pages/horus.html">Horus</a></p>
-                           <button class="learnmore_cta" onclick="location.href = 'product pages/horus.html';">learn more</button>
-                        </div>
-                        <div class="pro_catalognw cars" onclick="location.href = 'product pages/vf380.html';">
-                           <img src="images/catalogue/vf380.jpg"></img>
-                           <p><a href="product pages/vf380.html">VF380</a></p>
-                           <button class="learnmore_cta"  onclick="location.href = 'product pages/vf380.html';">learn more</button>
-                        </div>
-                        <div class="pro_catalognw cars"  onclick="location.href = 'product pages/vf680.html';">
-                           <img src="images/catalogue/vf680.jpg"></img>
-                           <p><a href="product pages/vf680.html">VF680</a></p>
-                           <button class="learnmore_cta" onclick="location.href = 'product pages/vf680.html';">learn more</button>
-                        </div>
-                        <div class="pro_catalognw cars" onclick="location.href = 'product pages/vf780.html';">
-                           <img src="images/catalogue/vf780.jpg"></img>
-                           <p><a href="product pages/vf780.html">VF780</a></p>
-                           <button class="learnmore_cta" onclick="location.href = 'product pages/vf780.html';">learn more</button>
-                        </div>
-                        <div class="pro_catalognw cars">
-                           <img src="images/catalogue/kf160.png"></img>
-                           <p><a href="#">KF160</a></p>
-                           <button class="learnmore_cta">learn more</button>
-                        </div>
-                        <div class="pro_catalognw cars">
-                           <img src="images/catalogue/kf460.png"></img>
-                           <p><a href="#">KF460</a></p>
-                           <button class="learnmore_cta">learn more</button>
-                        </div>
-                        <div class="pro_catalognw animals">
-                           <img src="images/catalogue/d2.png"></img>
-                           <p><a href="#">D2S</a></p>
-                           <button class="learnmore_cta">learn more</button>
-                        </div>
-						
-						<div class="pro_catalognw animals">
-                           <img src="images/catalogue/d1s.png" class="fingerprintpic"></img>
-                           <p><a href="#">D1S</a></p>
-                           <button class="learnmore_cta">learn more</button>
-                        </div>
-						
-						<div class="pro_catalognw animals">
-                           <img src="images/catalogue/wl10.png" class="fingerprintpic"></img>
-                           <p><a href="#">WL10</a></p>
-                           <button class="learnmore_cta">learn more</button>
-                        </div>
-						
-						<div class="pro_catalognw animals">
-                           <img src="images/catalogue/wl20.png" class="fingerprintpic"></img>
-                           <p><a href="#">WL20</a></p>
-                           <button class="learnmore_cta">learn more</button>
-                        </div>
-						
-						<div class="pro_catalognw animals">
-                           <img src="images/catalogue/wl30.png" class="fingerprintpic"></img>
-                           <p><a href="#">WL30</a></p>
-                           <button class="learnmore_cta">learn more</button>
-                        </div>
-						
-						
-						
-						<div class="pro_catalognw animals">
-                           <img src="images/catalogue/ua300.png" class="fingerprintpic"></img>
-                           <p><a href="#">UA300</a></p>
-                           <button class="learnmore_cta">learn more</button>
-                        </div>
-						
-						<div class="pro_catalognw animals">
-                           <img src="images/catalogue/ua400.png" class="fingerprintpic"></img>
-                           <p><a href="#">UA400</a></p>
-                           <button class="learnmore_cta">learn more</button>
-                        </div>
-						
-						
-						
-						<div class="pro_catalognw animals">
-                           <img src="images/catalogue/fingerprintimg (1).png" class="fingerprintpic"></img>
-                           <p><a href="#">UA760</a></p>
-                           <button class="learnmore_cta">learn more</button>
-                        </div>
-						
-						
-						
-						<div class="pro_catalognw animals">
-                           <img src="images/catalogue/fingerprintimg (2).png" class="fingerprintpic"></img>
-                           <p><a href="#">UA860</a></p>
-                           <button class="learnmore_cta">learn more</button>
-                        </div>
-						
-						<div class="pro_catalognw animals">
-                           <img src="images/catalogue/fingerprintimg (6).png" class="fingerprintpic"></img>
-                           <p><a href="#">D1</a></p>
-                           <button class="learnmore_cta">learn more</button>
-                        </div>
-						
-						<div class="pro_catalognw animals">
-                           <img src="images/catalogue/fingerprintimg (7).png" class="fingerprintpic"></img>
-                           <p><a href="#">D2</a></p>
-                           <button class="learnmore_cta">learn more</button>
-                        </div>
-						
-						<div class="pro_catalognw animals">
-                           <img src="images/catalogue/fingerprintimg (3).png" class="fingerprintpic"></img>
-                           <p><a href="#">Iclock360</a></p>
-                           <button class="learnmore_cta">learn more</button>
-                        </div>
+               <div></div>
 						
 						
 						
@@ -946,39 +830,39 @@ Bioteknix Private Limited|Biometric Time & Attendance System|Touchless Attendanc
 				  
 				  
                </div>
-               <div id="Tokyo12" class="tab12content">
+               <div id="Tokyo12" class="tab12content" style="display:none">
                   <h3>Tokyo</h3>
                   <p>Tokyo is the capital of Japan.</p>
                </div>
-               <div id="Tokyo3" class="tab12content">
+               <div id="Tokyo3" class="tab12content" style="display:none">
                   <h3>Tokyo</h3>
                   <p>Tokyo is the capital of Japan.</p>
                </div>
-               <div id="Tokyo4" class="tab12content">
+               <div id="Tokyo4" class="tab12content" style="display:none">
                   <h3>Tokyo</h3>
                   <p>Tokyo is the capital of Japan.</p>
                </div>
-               <div id="Tokyo5" class="tab12content">
+               <div id="Tokyo5" class="tab12content" style="display:none">
                   <h3>Tokyo</h3>
                   <p>Tokyo is the capital of Japan.</p>
                </div>
-               <div id="Tokyo6" class="tab12content">
+               <div id="Tokyo6" class="tab12content" style="display:none">
                   <h3>Tokyo</h3>
                   <p>Tokyo is the capital of Japan.</p>
                </div>
-               <div id="Tokyo7" class="tab12content">
+               <div id="Tokyo7" class="tab12content" style="display:none">
                   <h3>Tokyo</h3>
                   <p>Tokyo is the capital of Japan.</p>
                </div>
-               <div id="Tokyo8" class="tab12content">
+               <div id="Tokyo8" class="tab12content" style="display:none">
                   <h3>Tokyo</h3>
                   <p>Tokyo is the capital of Japan.</p>
                </div>
-               <div id="Tokyo9" class="tab12content">
+               <div id="Tokyo9" class="tab12content" style="display:none">
                   <h3>To</h3>
                   <p>Tokyo is the capital of Japan.</p>
                </div>
-               <div id="Tokyo10" class="tab12content">
+               <div id="Tokyo10" class="tab12content" style="display:none">
                   <h3>Toko</h3>
                   <p>Tokyo is the capital of Japan.</p>
                </div>
@@ -1133,60 +1017,61 @@ Bioteknix Private Limited|Biometric Time & Attendance System|Touchless Attendanc
          <h4>Quick Links</h4>
          <div class="useful_link_div">
                <ul class="service_list">
-                  <li><a href="productpage2.html"><i class="fa fa-angle-right"></i> Cctv</a></li>
-                  <li><a href="productpage2.html"> <i class="fa fa-angle-right"></i>Time Attendance</a></li>
+                <li><a href="productpage2.html"><i class="fa fa-angle-right"></i> Body Temperature & Mask Detection</a></li>
+                  <li><a href="cctv.html"><i class="fa fa-angle-right"></i> Cctv</a></li>
+                  <li><a href="timeattendance.html"> <i class="fa fa-angle-right"></i>Time Attendance</a></li>
                   
-          
-          
-          <li><a href="productpage2.html"> <i class="fa fa-angle-right"></i> Access Control</a></li>
-      <li><a href="productpage2.html"> <i class="fa fa-angle-right"></i>Entrance Control</a></li>
-      <li><a href="productpage2.html"> <i class="fa fa-angle-right"></i> Elevator Control</a></li>
-      <li><a href="productpage2.html"> <i class="fa fa-angle-right"></i> Security Inspection</a></li>
-      <li><a href="productpage2.html"> <i class="fa fa-angle-right"></i> Hotel Lock Systems</a></li>
-      <li><a href="productpage2.html"> <i class="fa fa-angle-right"></i> Smart Lock</a></li>
-    
+				  
+				  
+				  <li><a href="accesscontrol.html"> <i class="fa fa-angle-right"></i> Access Control</a></li>
+		  <li><a href="entrancecontrol.html"> <i class="fa fa-angle-right"></i>Entrance Control</a></li>
+		  <li><a href="elevatorcontrol.html"> <i class="fa fa-angle-right"></i> Elevator Control</a></li>
+		  <li><a href="securityinspection.html"> <i class="fa fa-angle-right"></i> Security Inspection</a></li>
+		  <li><a href="hotellock.html"> <i class="fa fa-angle-right"></i> Hotel Lock Systems</a></li>
+		  <li><a href="smartlock.html"> <i class="fa fa-angle-right"></i> Smart Lock</a></li>
+		
 
                </ul>
-         
-         </div>
-         
-         
-          <div class="useful_link_div">
+			   
+			   </div>
+			   
+			   
+			    <div class="useful_link_div">
                <ul class="service_list">
-         
-         
-           <li><a href="productpage2.html"> <i class="fa fa-angle-right"></i> Guard Patrolling System</a></li>
-      <li><a href="productpage2.html"> <i class="fa fa-angle-right"></i> Gate Automation</a></li>
-      <li><a href="productpage2.html"> <i class="fa fa-angle-right"></i> Canteen Management</a></li>
-      <li><a href="productpage2.html"> <i class="fa fa-angle-right"></i> Visitor Management</a></li>
-                        <li><a href="productpage2.html"> <i class="fa fa-angle-right"></i>    Video Door Phone</a></li>
-          <li><a href="productpage2.html"> <i class="fa fa-angle-right"></i>Burglar Alarm</a></li>
-          <li><a href="productpage2.html"> <i class="fa fa-angle-right"></i> School Timer</a></li>
-          <li><a href="productpage2.html"> <i class="fa fa-angle-right"></i> Fire Alarm System</a></li>
-          
-         
+			   
+			   
+			     <li><a href="guardpatrolling.html"> <i class="fa fa-angle-right"></i> Guard Patrolling System</a></li>
+		  <li><a href="gateautomation.html"> <i class="fa fa-angle-right"></i> Gate Automation</a></li>
+		  <li><a href="canteenmanagement.html"> <i class="fa fa-angle-right"></i> Canteen Management</a></li>
+		  <li><a href="visitormanagement.html"> <i class="fa fa-angle-right"></i> Visitor Management</a></li>
+              				  <li><a href="videodoor.html"> <i class="fa fa-angle-right"></i>    Video Door Phone</a></li>
+				  <li><a href="burglaralarm.html"> <i class="fa fa-angle-right"></i>Burglar Alarm</a></li>
+				  <li><a href="schooltimer.html"> <i class="fa fa-angle-right"></i> School Timer</a></li>
+				  <li><a href="firealarm.html"> <i class="fa fa-angle-right"></i> Fire Alarm System</a></li>
+				  <li><a href="safetylockers.html"> <i class="fa fa-angle-right"></i> Safety Lockers</a></li>
+				 
 
                </ul>
-         
-         </div>
-         
-         <div class="useful_link_div">
+			   
+			   </div>
+			   
+			   <div class="useful_link_div">
                <ul class="service_list">
-         
-         
-          <li><a href="productpage2.html"> <i class="fa fa-angle-right"></i> Safety Lockers</a></li>
+			   
+			   
+				  
 
-          <li><a href="productpage2.html"> <i class="fa fa-angle-right"></i>Epabx</a></li>
-          <li><a href="productpage2.html"> <i class="fa fa-angle-right"></i> Networking</a></li>
-          <li><a href="productpage2.html"> <i class="fa fa-angle-right"></i>Vehicle Tracking</a></li>
-          <li><a href="productpage2.html"> <i class="fa fa-angle-right"></i> PA Systems</a></li>
-          <li><a href="productpage2.html"> <i class="fa fa-angle-right"></i>Projectors</a></li>
-          <li><a href="productpage2.html"> <i class="fa fa-angle-right"></i> Smart Class Room</a></li>
-          <li><a href="productpage2.html"> <i class="fa fa-angle-right"></i> Softwares</a></li>
+				  <li><a href="epabx.html"> <i class="fa fa-angle-right"></i>Epabx</a></li>
+				  <li><a href="networking.html"> <i class="fa fa-angle-right"></i> Networking</a></li>
+				  <li><a href="vehicletracking.html"> <i class="fa fa-angle-right"></i>Vehicle Tracking</a></li>
+				  <li><a href="pasystems.html"> <i class="fa fa-angle-right"></i> PA Systems</a></li>
+				  <li><a href="projectors.html"> <i class="fa fa-angle-right"></i>Projectors</a></li>
+				  <li><a href="smartclass.html"> <i class="fa fa-angle-right"></i> Smart Class Room</a></li>
+				  <li><a href="softwares.html"> <i class="fa fa-angle-right"></i> Softwares</a></li>
 
                </ul>
-         
-         </div>
+			   
+			   </div>
          
          
          
@@ -1289,7 +1174,7 @@ Bioteknix Private Limited|Biometric Time & Attendance System|Touchless Attendanc
       //# sourceURL=pen.js
           
    </script>
-   <script>
+   <!-- <script>
       function openCity(evt, cityName) {
         var i, tab12content, tab12links;
         tab12content = document.getElementsByClassName("tab12content");
@@ -1306,7 +1191,7 @@ Bioteknix Private Limited|Biometric Time & Attendance System|Touchless Attendanc
       
       // Get the element with id="defaultOpen12" and click on it
       document.getElementById("defaultOpen12").click();
-   </script>
+   </script> -->
    <script>
       filterSelectionpar("all")
       function filterSelectionpar(c) {
