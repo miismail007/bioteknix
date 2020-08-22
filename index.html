@@ -1188,87 +1188,46 @@ Get in touch for support on your project TODAY!
   object-fit: all;
 }
       </style>
-      <style type="text/css">
-        .cont-slider {
-    position: relative;
-    height: 100vh;
-    max-height: 100vh;
-    width: auto;
-    min-width: 100vw;
-    margin: 0 auto;
-}
-.slider {
-    animation: sliding 25s ease-out 0s backwards infinite;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 500%;
-    height: 100%;
-}
-.slide {
-    display: inline-block;
-    position: relative;
-    width: 20%;
-    height: 100%;    
-    background-attachment: fixed;
-    background-position: center center;
-    background-size: cover;
-}
-.one {
-  background-image: url(images/banner/banner4.jpg);
-background-repeat: no-repeat;
-background-color: #000;
-  background-position: center top}
-.two {
-  background-image: url(images/banner/banner5.jpg);
-background-repeat: no-repeat;
-background-color: #000;
-  background-position: center top}
-.three {
-  background-image: url(images/banner/banner6.png);
-background-repeat: no-repeat;
-background-color: #000;
-  background-position: center top}
-.four {
-  background-image: url(images/banner/banner7.png);
-background-repeat: no-repeat;
-background-color: #000;
-  background-position: center top}
-.five {
-  background-image: url(images/banner/banner8.png);
-background-repeat: no-repeat;
-background-color: #000;
-  background-position: center top}
-  .six {
-  background-image: url(images/banner/banner9.png);
-background-repeat: no-repeat;
-background-color: #000;
-  background-position: center top}
-
-@keyframes sliding {
-  0% {left: 0%; }
-  15% {left: 0%; }
-  20% {left: -100%; }
-  35% {left: -100%; }
-  40% {left: -200%; }  
-  55% {left: -200%; }
-  60% {left: -300%; }
-  75% {left: -300%; }
-  80% {left: -400%; }
-  95% {left: -400%; }   
-  100% {left: 0; }
-}
-      </style>
       <div class="hero_section">
-        <div class="cont-slider">
-    <section class="slider">
-      <article class="slide one"><span></span></article><!--
-      --><article class="slide two"><span></span></article><!--
-      --><article class="slide three"><span></span></article><!--
-      --><article class="slide four"><span></span></article><!--
-      --><article class="slide five"><span></span></article>
-    --><article class="slide six"><span></span></article>
-    </section>
+        <div class="slideshow-containers">
+<div class="mySlidess fades">
+  <img class="sliderimages" src="images/banner/banner4.jpg">
+  <!-- <div class="texted">Caption Three</div> -->
+</div>
+<div class="mySlidess fades">
+  <img class="sliderimages" src="images/banner/banner5.jpg">
+  <!-- <div class="textes">Caption Three</div> -->
+</div>
+<div class="mySlidess fades">
+  <img class="sliderimages" src="images/banner/banner6.png">
+  <!-- <div class="textes">Caption Three</div> -->
+</div>
+<div class="mySlidess fades">
+  <img class="sliderimages" src="images/banner/banner7.png">
+  <!-- <div class="textes">Caption Three</div> -->
+</div>
+<div class="mySlidess fades">
+  <img class="sliderimages" src="images/banner/banner8.png">
+  <!-- <div class="textes">Caption Three</div> -->
+</div>
+<div class="mySlidess fades">
+  <img class="sliderimages" src="images/banner/banner9.png">
+  <!-- <div class="textes">Caption Three</div> -->
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+
+<div style="text-align:center;margin-top:-20px;">
+  <span class="doted" onclick="currentSlide(1)"></span> 
+  <span class="doted" onclick="currentSlide(2)"></span> 
+  <span class="doted" onclick="currentSlide(3)"></span> 
+  <span class="doted" onclick="currentSlide(4)"></span>
+  <span class="doted" onclick="currentSlide(5)"></span>
+  <span class="doted" onclick="currentSlide(6)"></span>
+  <span class="doted" onclick="currentSlide(7)"></span>
+  <span class="doted" onclick="currentSlide(8)"></span>
 </div>
          <!-- <h3>keep <b>safe & happy </b> your mind</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod </p>
