@@ -1173,61 +1173,102 @@ Get in touch for support on your project TODAY!
 @media only screen and (max-width: 300px) {
   .prev, .next,.texted {font-size: 11px}
 }
+
+
+
+
+.mySlidess div img{
+  width:450px;
+  height:450px;
+  object-fit: contain;
+}
+.mySlidess img{
+  width:100%;
+  height:700px;
+  object-fit: all;
+}
+      </style>
+      <style type="text/css">
+        .cont-slider {
+    position: relative;
+    height: 100vh;
+    max-height: 100vh;
+    width: auto;
+    min-width: 100vw;
+    margin: 0 auto;
+}
+.slider {
+    animation: sliding 25s ease-out 0s backwards infinite;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 500%;
+    height: 100%;
+}
+.slide {
+    display: inline-block;
+    position: relative;
+    width: 20%;
+    height: 100%;    
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+.one {
+  background-image: url(images/banner/banner4.jpg);
+background-repeat: no-repeat;
+background-color: #000;
+  background-position: center top}
+.two {
+  background-image: url(images/banner/banner5.jpg);
+background-repeat: no-repeat;
+background-color: #000;
+  background-position: center top}
+.three {
+  background-image: url(images/banner/banner6.png);
+background-repeat: no-repeat;
+background-color: #000;
+  background-position: center top}
+.four {
+  background-image: url(images/banner/banner7.png);
+background-repeat: no-repeat;
+background-color: #000;
+  background-position: center top}
+.five {
+  background-image: url(images/banner/banner8.png);
+background-repeat: no-repeat;
+background-color: #000;
+  background-position: center top}
+  .six {
+  background-image: url(images/banner/banner9.png);
+background-repeat: no-repeat;
+background-color: #000;
+  background-position: center top}
+
+@keyframes sliding {
+  0% {left: 0%; }
+  15% {left: 0%; }
+  20% {left: -100%; }
+  35% {left: -100%; }
+  40% {left: -200%; }  
+  55% {left: -200%; }
+  60% {left: -300%; }
+  75% {left: -300%; }
+  80% {left: -400%; }
+  95% {left: -400%; }   
+  100% {left: 0; }
+}
       </style>
       <div class="hero_section">
-        <div class="slideshow-containers">
-
-<div class="mySlidess fades">
-  <img class="sliderimages" src="images/banner/banner1.jpg" style="width:100%;height:700px;object-fit: all;">
-  <div class="slideupimage"><img style="width:450px;height:450px;object-fit: contain;" src="images/banner/banner1img.png"></div>
-  <div class="texted"><h1>Bioteknix</h1><h4>Lorem ipsum dolor sit amet</h4><h4>nullam ullamco, et tincidunt </h4><h4>consectetuer sollicitudin vel</h4><h4>enim sit erat, sit sodales</h4><a href="productpage2.html"><button class="cta2">Get Started</button></a></div>
-</div>
-<div class="mySlidess fades">
-  <img class="sliderimages" src="images/banner/banner2.png" style="width:100%;height:700px;object-fit: all;">
-  <div class="slideupimage21"><img style="width:450px;height:450px;object-fit: contain;" src="images/banner/banner2img1.png"></div>
-  <div class="slideupimage22"><img style="width:450px;height:450px;object-fit: contain;" src="images/banner/banner2img2.png"></div>
-  <div class="texted2"><h1>Bioteknix</h1><h4>Lorem ipsum dolor sit amet</h4><h4>nullam ullamco, et tincidunt </h4><h4>consectetuer sollicitudin vel</h4><h4>enim sit erat, sit sodales</h4><a href="productpage2.html"><button class="cta2">Get Started</button></a></div>
-</div>
-<div class="mySlidess fades">
-  <img class="sliderimages" src="images/banner/banner3.png" style="width:100%;height:700px;object-fit: all;">
-  <div class="texted3"><h1>Bioteknix</h1><h4>Lorem ipsum dolor sit amet</h4><h4>nullam ullamco, et tincidunt </h4><h4>consectetuer sollicitudin vel</h4><h4>enim sit erat, sit sodales</h4><a href="productpage2.html"><button class="cta2">Get Started</button></a></div>
-  <div class="slideupimage3"><img style="width:450px;height:450px;object-fit: contain;" src="images/banner/banner3img1.png"></div>
-  
-</div>
-<div class="mySlidess fades">
-  <img class="sliderimages" src="images/banner/banner4.jpg" style="width:100%;height:700px;object-fit: all;">
-  <!-- <div class="texted">Caption Three</div> -->
-</div>
-<div class="mySlidess fades">
-  <img class="sliderimages" src="images/banner/banner5.jpg" style="width:100%;height:700px;object-fit: all;">
-  <!-- <div class="textes">Caption Three</div> -->
-</div>
-<div class="mySlidess fades">
-  <img class="sliderimages" src="images/banner/banner6.png" style="width:100%;height:700px;object-fit: all;">
-  <!-- <div class="textes">Caption Three</div> -->
-</div>
-<div class="mySlidess fades">
-  <img class="sliderimages" src="images/banner/banner7.png" style="width:100%;height:700px;object-fit: all;">
-  <!-- <div class="textes">Caption Three</div> -->
-</div>
-<div class="mySlidess fades">
-  <img class="sliderimages" src="images/banner/banner8.png" style="width:100%;height:700px;object-fit: all;">
-  <!-- <div class="textes">Caption Three</div> -->
-</div>
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-</div>
-
-<div style="text-align:center;margin-top:-20px;">
-  <span class="doted" onclick="currentSlide(1)"></span> 
-  <span class="doted" onclick="currentSlide(2)"></span> 
-  <span class="doted" onclick="currentSlide(3)"></span> 
-  <span class="doted" onclick="currentSlide(4)"></span>
-  <span class="doted" onclick="currentSlide(5)"></span>
-  <span class="doted" onclick="currentSlide(6)"></span>
-  <span class="doted" onclick="currentSlide(7)"></span>
-  <span class="doted" onclick="currentSlide(8)"></span>
+        <div class="cont-slider">
+    <section class="slider">
+      <article class="slide one"><span></span></article><!--
+      --><article class="slide two"><span></span></article><!--
+      --><article class="slide three"><span></span></article><!--
+      --><article class="slide four"><span></span></article><!--
+      --><article class="slide five"><span></span></article>
+    --><article class="slide six"><span></span></article>
+    </section>
 </div>
          <!-- <h3>keep <b>safe & happy </b> your mind</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod </p>
@@ -1582,6 +1623,18 @@ our customers with honesty and integrity.
 </button></a>
          </div>
       </div>
+      <style type="text/css">
+        .img-wrapper{
+          overflow: hidden;
+
+        }
+        .img-wrapper img{
+          transition: 0.3s;
+        }
+        .img-wrapper img:hover{
+          transform: scale(1.1);
+        }
+      </style>
       <div class="section_four">
          <div class="pagecenter">
             <div class="section_four_title">
@@ -1593,19 +1646,19 @@ our customers with honesty and integrity.
                   <div class="mySlidesmrt fademrt">
                      <div class="section_four_group">
                         <div class="section_four_part">
-                           <a href="cctv.html"><img src="images/service/1.CCTV.jpg"/></a>
+                           <a href="cctv.html"><div class="img-wrapper"><img src="images/service/1.CCTV.jpg"/></div></a>
                            <h4>cctv</h4>
                            <p>Excepteur sint occaecat cupidatat non proi dent, sunt in culpa qui officia deserunt mollit anim id est.</p>
                            <a href="cctv.html"><button class="readmore1">read more</button></a>
                         </div>
                         <div class="section_four_part">
-                           <a href="timeattendance.html"><img src="images/service/2.TIME ATTENDANCE.jpg"></a>
+                           <a href="timeattendance.html"><div class="img-wrapper"><img src="images/service/2.TIME ATTENDANCE.jpg"></div></a>
                            <h4>TIME ATTENDANCE</h4>
                            <p>Excepteur sint occaecat cupidatat non proi dent, sunt in culpa qui officia deserunt mollit anim id est.</p>
                            <a href="timeattendance.html"><button class="readmore1">read more</button></a>
                         </div>
                         <div class="section_four_part">
-                           <a href="accesscontrol.html"><img src="images/service/3.ACCESS CONTROL.jpg"/></a>
+                           <a href="accesscontrol.html"><div class="img-wrapper"><img src="images/service/3.ACCESS CONTROL.jpg"/></div></a>
                            <h4>ACCESS CONTROL</h4>
                            <p>Excepteur sint occaecat cupidatat non proi dent, sunt in culpa qui officia deserunt mollit anim id est.</p>
                            <a href="accesscontrol.html"><button class="readmore1">read more</button></a>
@@ -1615,19 +1668,19 @@ our customers with honesty and integrity.
                   <div class="mySlidesmrt fademrt">
                      <div class="section_four_group">
                         <div class="section_four_part">
-                           <a href="entrancecontrol.html"><img src="images/service/4.ENTRANCE CONTROL.jpg"/></a>
+                           <a href="entrancecontrol.html"><div class="img-wrapper"><img src="images/service/4.ENTRANCE CONTROL.jpg"/></div></a>
                            <h4>Entrance CONTROL</h4>
                            <p>Excepteur sint occaecat cupidatat non proi dent, sunt in culpa qui officia deserunt mollit anim id est.</p>
                            <a href="entrancecontrol.html"><button class="readmore1">read more</button></a>
                         </div>
                         <div class="section_four_part">
-                           <a href="elevatorcontrol.html"><img src="images/service/5.Elevator Control System.jpg"/></a>
+                           <a href="elevatorcontrol.html"><div class="img-wrapper"><img src="images/service/5.Elevator Control System.jpg"/></div></a>
                            <h4>Elevator CONTROL</h4>
                            <p>Excepteur sint occaecat cupidatat non proi dent, sunt in culpa qui officia deserunt mollit anim id est.</p>
                            <a href="elevatorcontrol.html"><button class="readmore1">read more</button></a>
                         </div>
                         <div class="section_four_part">
-                           <a href="securityinspection.html"><img src="images/service/6.SECURITY INSPECTION.jpg"/></a>
+                           <a href="securityinspection.html"><div class="img-wrapper"><img src="images/service/6.SECURITY INSPECTION.jpg"/></div></a>
                            <h4>Security Inspection</h4>
                            <p>Excepteur sint occaecat cupidatat non proi dent, sunt in culpa qui officia deserunt mollit anim id est.</p>
                            <a href="securityinspection.html"><button class="readmore1">read more</button></a>
@@ -1637,19 +1690,19 @@ our customers with honesty and integrity.
 				          <div class="mySlidesmrt fademrt">
                      <div class="section_four_group">
                         <div class="section_four_part">
-                           <a href="hotellock.html"><img src="images/service/7.HOTEL LOCK SYSTEMS.jpg"/></a>
+                           <a href="hotellock.html"><div class="img-wrapper"><img src="images/service/7.HOTEL LOCK SYSTEMS.jpg"/></div></a>
                            <h4>Hotel Lock System</h4>
                            <p>Excepteur sint occaecat cupidatat non proi dent, sunt in culpa qui officia deserunt mollit anim id est.</p>
                            <a href="hotellock.html"><button class="readmore1">read more</button></a>
                         </div>
                         <div class="section_four_part">
-                           <a href="smartlock.html"><img src="images/service/8.SMART LOCK.jpg"/></a>
+                           <a href="smartlock.html"><div class="img-wrapper"><img src="images/service/8.SMART LOCK.jpg"/></div></a>
                            <h4>Smart Lock</h4>
                            <p>Excepteur sint occaecat cupidatat non proi dent, sunt in culpa qui officia deserunt mollit anim id est.</p>
                            <a href="smartlock.html"><button class="readmore1">read more</button></a>
                         </div>
                         <div class="section_four_part">
-                           <a href="guardpatrolling.html"><img src="images/service/9.GUARD PATROLLING SYSTEM.jpg"/></a>
+                           <a href="guardpatrolling.html"><div class="img-wrapper"><img src="images/service/9.GUARD PATROLLING SYSTEM.jpg"/></div></a>
                            <h4>Guard Patrolling System</h4>
                            <p>Excepteur sint occaecat cupidatat non proi dent, sunt in culpa qui officia deserunt mollit anim id est.</p>
                            <a href="guardpatrolling.html"><button class="readmore1">read more</button></a>
@@ -1659,19 +1712,19 @@ our customers with honesty and integrity.
                   <div class="mySlidesmrt fademrt">
                      <div class="section_four_group">
                         <div class="section_four_part">
-                           <a href="gateautomation.html"><img src="images/service/10.GATE AUTOMATION.jpg"/></a>
+                           <a href="gateautomation.html"><div class="img-wrapper"><img src="images/service/10.GATE AUTOMATION.jpg"/></div></a>
                            <h4>Gate Automation System</h4>
                            <p>Excepteur sint occaecat cupidatat non proi dent, sunt in culpa qui officia deserunt mollit anim id est.</p>
                            <a href="gateautomation.html"><button class="readmore1">read more</button></a>
                         </div>
                         <div class="section_four_part">
-                           <a href="canteenmanagement.html"><img src="images/service/11.CANTEEN MANAGEMENT.jpg"/></a>
+                           <a href="canteenmanagement.html"><div class="img-wrapper"><img src="images/service/11.CANTEEN MANAGEMENT.jpg"/></div></a>
                            <h4>Canteen Management</h4>
                            <p>Excepteur sint occaecat cupidatat non proi dent, sunt in culpa qui officia deserunt mollit anim id est.</p>
                            <a href="canteenmanagement.html"><button class="readmore1">read more</button></a>
                         </div>
                         <div class="section_four_part">
-                           <a href="visitormanagement.html"><img src="images/service/12.VISITOR MANAGEMENT.jpg"/></a>
+                           <a href="visitormanagement.html"><div class="img-wrapper"><img src="images/service/12.VISITOR MANAGEMENT.jpg"/></div></a>
                            <h4>Visistor Management</h4>
                            <p>Excepteur sint occaecat cupidatat non proi dent, sunt in culpa qui officia deserunt mollit anim id est.</p>
                            <a href="visitormanagement.html"><button class="readmore1">read more</button></a>
@@ -1681,19 +1734,19 @@ our customers with honesty and integrity.
                   <div class="mySlidesmrt fademrt">
                      <div class="section_four_group">
                         <div class="section_four_part">
-                           <a href="videodoor.html"><img src="images/service/13.Video Door Phone.jpg"/></a>
+                           <a href="videodoor.html"><div class="img-wrapper"><img src="images/service/13.Video Door Phone.jpg"/></div></a>
                            <h4>Video Door Phone</h4>
                            <p>Excepteur sint occaecat cupidatat non proi dent, sunt in culpa qui officia deserunt mollit anim id est.</p>
                            <a href="videodoor.html"><button class="readmore1">read more</button></a>
                         </div>
                         <div class="section_four_part">
-                           <a href="burglaralarm.html"><img src="images/service/14.BURGLAR ALARM.jpg"/></a>
+                           <a href="burglaralarm.html"><div class="img-wrapper"><img src="images/service/14.BURGLAR ALARM.jpg"/></div></a>
                            <h4>Burglar Alarm</h4>
                            <p>Excepteur sint occaecat cupidatat non proi dent, sunt in culpa qui officia deserunt mollit anim id est.</p>
                            <a href="burglaralarm.html"><button class="readmore1">read more</button></a>
                         </div>
                         <div class="section_four_part">
-                           <a href="schooltimer.html"><img src="images/service/17.SAFETY LOCKERS.jpg"/></a>
+                           <a href="schooltimer.html"><div class="img-wrapper"><img src="images/service/17.SAFETY LOCKERS.jpg"/></div></a>
                            <h4>School Timer</h4>
                            <p>Excepteur sint occaecat cupidatat non proi dent, sunt in culpa qui officia deserunt mollit anim id est.</p>
                            <a href="schooltimer.html"><button class="readmore1">read more</button></a>
@@ -1703,19 +1756,19 @@ our customers with honesty and integrity.
                   <div class="mySlidesmrt fademrt">
                      <div class="section_four_group">
                         <div class="section_four_part">
-                           <a href="firealarm.html"><img src="images/service/16.FIRE ALARM SYSTEM.jpg"/></a>
+                           <a href="firealarm.html"><div class="img-wrapper"><img src="images/service/16.FIRE ALARM SYSTEM.jpg"/></div></a>
                            <h4>Fire Alarm System</h4>
                            <p>Excepteur sint occaecat cupidatat non proi dent, sunt in culpa qui officia deserunt mollit anim id est.</p>
                            <a href="firealarm.html"><button class="readmore1">read more</button></a>
                         </div>
                         <div class="section_four_part">
-                           <a href="safetylockers.html"><img src="images/service/15.SCHOOL TIMER.jpg"/></a>
+                           <a href="safetylockers.html"><div class="img-wrapper"><img src="images/service/15.SCHOOL TIMER.jpg"/></div></a>
                            <h4>Safety Lockers</h4>
                            <p>Excepteur sint occaecat cupidatat non proi dent, sunt in culpa qui officia deserunt mollit anim id est.</p>
                            <a href="safetylockers.html"><button class="readmore1">read more</button></a>
                         </div>
                         <div class="section_four_part">
-                           <a href="epabx.html"><img src="images/service/18.EPABX.jpg"/></a>
+                           <a href="epabx.html"><div class="img-wrapper"><img src="images/service/18.EPABX.jpg"/></div></a>
                            <h4>EPABX</h4>
                            <p>Excepteur sint occaecat cupidatat non proi dent, sunt in culpa qui officia deserunt mollit anim id est.</p>
                            <a href="epabx.html"><button class="readmore1">read more</button></a>
@@ -1725,19 +1778,19 @@ our customers with honesty and integrity.
                   <div class="mySlidesmrt fademrt">
                      <div class="section_four_group">
                         <div class="section_four_part">
-                           <a href="networking.html"><img src="images/service/19.NETWORKING.jpg"/></a>
+                           <a href="networking.html"><div class="img-wrapper"><img src="images/service/19.NETWORKING.jpg"/></div></a>
                            <h4>Networking</h4>
                            <p>Excepteur sint occaecat cupidatat non proi dent, sunt in culpa qui officia deserunt mollit anim id est.</p>
                            <a href="networking.html"><button class="readmore1">read more</button></a>
                         </div>
                         <div class="section_four_part">
-                           <a href="vehicletracking.html"><img src="images/service/20.VEHICLE TRACKING.jpg"/></a>
+                           <a href="vehicletracking.html"><div class="img-wrapper"><img src="images/service/20.VEHICLE TRACKING.jpg"/></div></a>
                            <h4>Vehicle Tracking</h4>
                            <p>Excepteur sint occaecat cupidatat non proi dent, sunt in culpa qui officia deserunt mollit anim id est.</p>
                            <a href="vehicletracking.html"><button class="readmore1">read more</button></a>
                         </div>
                         <div class="section_four_part">
-                           <a href="pasystems.html"><img src="images/service/21.PA SYSTEMS.jpg"/></a>
+                           <a href="pasystems.html"><div class="img-wrapper"><img src="images/service/21.PA SYSTEMS.jpg"/></div></a>
                            <h4>PA Systems</h4>
                            <p>Excepteur sint occaecat cupidatat non proi dent, sunt in culpa qui officia deserunt mollit anim id est.</p>
                            <a href="pasystems.html"><button class="readmore1">read more</button></a>
@@ -1747,19 +1800,19 @@ our customers with honesty and integrity.
                   <div class="mySlidesmrt fademrt">
                      <div class="section_four_group">
                         <div class="section_four_part">
-                           <a href="projectors.html"><img src="images/service/22.PROJECTORS.jpg"/></a>
+                           <a href="projectors.html"><div class="img-wrapper"><img src="images/service/22.PROJECTORS.jpg"/></div></a>
                            <h4>Projectors</h4>
                            <p>Excepteur sint occaecat cupidatat non proi dent, sunt in culpa qui officia deserunt mollit anim id est.</p>
                            <a href="projectors.html"><button class="readmore1">read more</button></a>
                         </div>
                         <div class="section_four_part">
-                           <a href="smartclass.html"><img src="images/service/23.SMART CLASS ROOM.jpg"/></a>
+                           <a href="smartclass.html"><div class="img-wrapper"><img src="images/service/23.SMART CLASS ROOM.jpg"/></div></a>
                            <h4>Smart Class Room</h4>
                            <p>Excepteur sint occaecat cupidatat non proi dent, sunt in culpa qui officia deserunt mollit anim id est.</p>
                            <a href="smartclass.html"><button class="readmore1">read more</button></a>
                         </div>
                         <div class="section_four_part">
-                           <a href="softwares.html"><img src="images/service/24.SOFTWARES.jpg"/></a>
+                           <a href="softwares.html"><div class="img-wrapper"><img src="images/service/24.SOFTWARES.jpg"/></div></a>
                            <h4>Softwares</h4>
                            <p>Excepteur sint occaecat cupidatat non proi dent, sunt in culpa qui officia deserunt mollit anim id est.</p>
                            <a href="softwares.html"><button class="readmore1">read more</button></a>

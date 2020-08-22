@@ -549,7 +549,7 @@ background-attachment: fixed;
   animation-iteration-count: infinite;
 }*/
 
-
+/*
 .choose_part img{transition: 0.70s;
   -webkit-transition: 0.70s;
   -moz-transition: 0.70s;
@@ -566,8 +566,8 @@ background-attachment: fixed;
   -o-transform: rotate(360deg);
   -ms-transform: rotate(360deg);
   transform: rotate(360deg);}
-
-.choose_part:hover .choose_prt_pic{transition: 0.70s;
+*/
+/*.choose_part:hover .choose_prt_pic{transition: 0.70s;
   -webkit-transition: 0.70s;
   -moz-transition: 0.70s;
   -ms-transition: 0.70s;
@@ -581,7 +581,7 @@ background-attachment: fixed;
 
 
 
-
+*/
 
 
 
